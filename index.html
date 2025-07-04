@@ -1,0 +1,2945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prof. Mohamad Khalil – Biomedical Engineer</title>
+<style>
+  :root {
+    --primary-blue: #005fa3;
+    --light-blue: #eef6ff;
+    --header-blue: #002b5c;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+    color: #333;
+  }
+   .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 16px;
+      color: #003d6b;
+      border-bottom: 2px solid #005fa3;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+    }
+
+   
+
+    
+
+    .skills-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .skills-columns ul {
+      padding-left: 0;
+    }
+  .timeline {
+      border-left: 4px solid #005fa3;
+      margin: 0;
+      padding: 0 0 0 20px;
+      list-style: none;
+    }
+
+    .timeline li {
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 20px;
+    }
+
+    .timeline li::before {
+      content: "🏆";
+      position: absolute;
+      left: -32px;
+      top: 0;
+      font-size: 20px;
+      background: #005fa3;
+      color: #fff;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 50%;
+    }
+
+    .timeline .date {
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 5px;
+    }
+
+    .timeline .description {
+      font-size: 15.5px;
+      line-height: 1.6;
+    }
+
+  .contribution {
+      background-color: #eef6ff;
+      border-left: 5px solid #005fa3;
+      padding: 16px 22px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: flex-start;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+    }
+
+    .contribution-icon {
+      font-size: 22px;
+      margin-right: 12px;
+      color: #005fa3;
+    }
+
+    .contribution-text {
+      font-size: 15.5px;
+      line-height: 1.6;
+    }
+
+  .role-card {
+      background-color: #eef6ff;
+      border-left: 5px solid #005fa3;
+      padding: 18px 22px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .role-card .date {
+      font-weight: bold;
+      color: #003366;
+     white-space: nowrap;
+      font-size: 16px;
+    }
+
+    .role-card .title {
+      font-size: 16px;
+      color: #005fa3;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .role-card .desc {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+   .intro {
+      margin-bottom: 30px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .course {
+      margin-bottom: 25px;
+      padding: 20px;
+      background-color: #f0f7ff;
+      border-left: 5px solid #005fa3;
+      border-radius: 8px;
+    }
+
+    .course h2 {
+      margin-top: 0;
+      color: #003366;
+	  font-size: 17px;
+    }
+
+    .course p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+	.table-wrapper {
+	  width: 100%;
+	  overflow-x: auto; /* Enables horizontal scroll */
+	  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+	}
+    table {
+    
+	  width: 90%;      /* Table takes 90% of the container */
+	  min-width: 600px; /* Minimum width to avoid shrinking */
+	  border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px 0;
+      vertical-align: top;
+    }
+
+    .date {
+      width: 180px;
+      font-weight: bold;
+      color: #002b5c;
+    }
+	 .timeline-entry {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 25px;
+      border-left: 4px solid #005fa3;
+      background-color: #f0f7ff;
+      border-radius: 8px;
+      padding: 15px 20px 15px 25px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+
+    .timeline-entry::before {
+      content: "📅";
+      position: absolute;
+      left: -17px;
+      top: 14px;
+      font-size: 18px;
+    }
+
+    .timeline-date {
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 5px;
+    }
+
+    .timeline-title {
+      color: #005fa3;
+      font-weight: 600;
+    }
+
+    .timeline-desc {
+      margin-top: 5px;
+      line-height: 1.6;
+    }
+
+  header {
+    background-color: var(--header-blue);
+    color: white;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	flex-wrap: wrap;
+
+  }
+
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-right: 1.5rem;
+    background: white;
+  }
+
+  .header-left {
+    display: flex;
+ 	flex-direction: column;     /* Stack image and text vertically */
+	align-items: center;
+	text-align: center;
+	flex: 1 1 100%;
+	gap: 1rem;
+  }
+
+  .header-text h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  .header-text p {
+    margin: 0.3rem 0 0;
+    font-size: 1rem;
+  }
+
+  .lang-switch {
+    display: flex;
+    gap: 0.5rem;
+    background: transparent;
+	
+    justify-content: center;    /* Center buttons on mobile */
+    flex: 1 1 100%;
+    margin-top: 1rem;
+    
+  }
+
+  .lang-btn {
+    background: white;
+    border: 2px solid #004080;
+    color: var(--primary-blue);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .lang-btn.active,
+  .lang-btn:hover {
+    background: #004080;
+    color: white;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .tabs div {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--primary-blue);
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+
+  .tabs div.active {
+    border-color: var(--primary-blue);
+    color: var(--header-blue);
+  }
+
+  .export-container {
+    text-align: right;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .export-container button {
+    padding: 0.6rem 1rem;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .export-container button:hover {
+    background: #004080;
+  }
+
+  .tab-content {
+    display: none;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  h2 {
+    color: var(--primary-blue);
+    margin-top: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  ul {
+    padding-left: 1.4rem;
+  }
+
+  .toc {
+    background: var(--light-blue);
+    padding: 1rem;
+    border-left: 5px solid var(--primary-blue);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .toc h3 {
+    margin-top: 0;
+  }
+
+  .toc ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .toc li {
+    margin: 0.5rem 0;
+  }
+
+  .toc a {
+    text-decoration: none;
+    color: var(--primary-blue);
+  }
+
+  .toc a:hover {
+    text-decoration: underline;
+  }
+
+  details {
+    margin-bottom: 1.5rem;
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    border-left: 4px solid var(--primary-blue);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--primary-blue);
+    outline-offset: 3px;
+  }
+
+  summary::-webkit-details-marker {
+    color: var(--primary-blue);
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    background: #e2e6eb;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  a {
+    color: var(--primary-blue);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  .cv-header {
+      border-bottom: 2px solid #005fa3;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .cv-header h1 {
+      color: #005fa3;
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    .cv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .section-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #002b5c;
+    }
+    .info-block p {
+      margin: 5px 0;
+      line-height: 1.6;
+    }
+    
+
+  @media (min-width: 600px) {
+  header {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .header-left {
+    flex-direction: row;       /* Image and text side by side */
+    text-align: left;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+
+  .lang-switch {
+    flex: 0 0 auto;
+    margin-top: 0;
+    justify-content: flex-end; /* Buttons align to the right */
+  }
+}
+
+  @media screen and (max-width: 600px) {
+    .tabs {
+      flex-direction: column;
+    }
+  }
+
+  /* Print styles */
+  @media print {
+    body:not(.printing) * {
+      visibility: hidden !important;
+    }
+    body.printing {
+      background: white;
+      color: black;
+    }
+    body.printing header,
+    body.printing .tab-content.active {
+      display: block !important;
+      visibility: visible !important;
+    }
+    body.printing .export-container,
+    body.printing .tabs,
+    body.printing footer,
+    body.printing .lang-switch {
+      display: none !important;
+    }
+    body.printing details {
+      display: block;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+    summary {
+      font-weight: bold;
+      color: black;
+      cursor: default;
+    }
+	footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      background: #e2e6eb;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="mk.png" alt="Prof. Mohamad Khalil" class="profile-pic" />
+    <div class="header-text">
+      <h1>Prof. Mohamad Khalil</h1>
+      <p> PhD- HDR from UTC,<br>Qualification Professeur CNU, France
+</p>
+    </div>
+  </div>
+  <div class="lang-switch" role="group" aria-label="Language Switch">
+    <button onclick="switchLanguage('en')" id="btn-en" class="lang-btn active">English</button>
+    <button onclick="switchLanguage('ar')" id="btn-ar" class="lang-btn">العربية</button>
+  </div>
+</header>
+
+<div class="tabs" role="tablist" aria-label="CV Sections Tabs">
+  <div id="tab-summary" class="active" role="tab" tabindex="0" aria-selected="true" aria-controls="content-summary">Summary CV</div>
+  <div id="tab-detail" role="tab" tabindex="0" aria-selected="false" aria-controls="content-detail">Detailed CV</div>
+</div>
+
+<div class="export-container">
+  <button id="exportBtn" aria-label="Export or print CV as PDF">⬇️ Export / Print PDF</button>
+</div>
+
+<!-- Summary Tab Content -->
+<div id="content-summary" class="tab-content active" role="tabpanel" aria-labelledby="tab-summary">
+  <div class="toc">
+    <h3>Summary Table of Contents</h3>
+    <ul>
+      <li><a href="#sum-contact">Contact</a></li>
+      <li><a href="#sum-about">About Prof. Mohamed Ali Khalil</a></li>
+      <li><a href="#sum-roles">Working Current</a></li>
+      <li><a href="#sum-education">Academic Certificates</a></li>
+      <li><a href="#sum-experience">Academic and community experience and achievements</a></li>
+	   <li><a href="#sum-award">Awards and Recognitions</a></li>
+	    <li><a href="#sum-theme">Research Themes</a></li>
+    </ul>
+  </div>
+
+  <details id="sum-contact" open>
+    <summary>Contact</summary>
+     <p><strong>Email:</strong> <a href="mailto:mkhalil@ieee.org">mkhalil@ieee.org</a></p>
+     <p><strong>Email:</strong> <a href="mailto:mohamad.khalil@ul.edu.lb">mohamad.khalil@ul.edu.lb</a></p>
+     <p><strong>Tel:</strong> 03 396 747, 06 213 449</p>
+      <p><strong>Fax:</strong> 06 213 253</p>
+  </details>
+
+  <details id="sum-about" open>
+    <summary>About Prof. Mohamed Ali Khalil</summary>
+    <p style="font-size: 16px; text-align: justify; color: #333;">
+    <strong>Professor Mohamed Ali Khalil</strong> (b. Akkar – 1973) is one of the most prominent Lebanese academics in the fields of 
+    <strong>artificial intelligence</strong> and <strong>biomedical engineering</strong>. He is currently a professor at the 
+    <strong>Lebanese University</strong> and director of the <strong>Azm Center for Research in Biotechnology</strong> at the 
+    Higher Doctoral Institute of Science and Technology.
+  </p>
+
+  <p style="font-size: 16px; text-align: justify; color: #333;">
+    He has more than <strong>25 years</strong> of academic and scientific experience, and has published over 
+    <strong>280 scientific articles</strong> in international refereed journals and conferences. His 
+    <strong>H-index of 31</strong> reflects his globally prestigious research impact.
+  </p>
+
+  <p style="font-size: 16px; text-align: justify; color: #333;">
+    Prof. Khalil is widely recognized for his pioneering work in <strong>AI applications in medicine</strong>, 
+    <strong>brain signal analysis</strong>, and the development of <strong>intelligent biomedical systems</strong>. 
+    He has built strong research partnerships with universities and research centers in <strong>France</strong>, 
+    <strong>Australia</strong>, and <strong>Russia</strong>, and actively contributes to student exchange programs 
+    and capacity building at both local and international levels.
+  </p>
+
+  <p style="font-size: 16px; text-align: justify; color: #333;">
+    At the public service level, Prof. Khalil has previously served as <strong>Mayor of Old Akkar</strong>, where he led 
+    numerous <strong>development projects</strong> — especially during economic crises and the COVID-19 pandemic — 
+    embodying the principle of integrating <strong>science with community service</strong>.
+  </p>
+  </details>
+
+  <details id="sum-roles" open>
+    <summary>Working Current</summary>
+    <ul>
+     
+		  <li><strong>Lecturer at the Faculty of Engineering</strong>  - First Branch at the Lebanese University</li>
+		  <li><strong>Lecturer</strong> on artificial intelligence and its medical applications at the universities of Compiègne, Lille, Rennes, Rouen, Poitiers and Paris in France, and the University of Pittsburgh in Russia</li>
+		  <li><strong>Director of Al-Azm Center </strong> for Biotechnology Research at the Doctoral School in Science and Technology at the Lebanese University since 2009</li>
+		  <li><strong>Responsible of Master</strong> “Internet of Things and Smart Systems” at the Faculty of Engineering at the Lebanese University</li>
+		
+
+    </ul>
+  </details>
+
+  <details id="sum-education" open>
+    <summary>Academic Certificates</summary>
+    <ul>
+      <li>He holds the rank of Professor from the Lebanese University – September 2008.</li>
+	  <li>He holds a certificate of qualification for research supervision (HDR – Habilitation à Diriger les Recherches) from the University of Technology of Compiègne – France – March 2006.</li>
+	  <li>PhD in Biomedical Engineering Techniques from the University of Technology of Compiègne – France, with honor: "Very honorable with the congratulations of the jury" – September 1999.</li>
+	  <li>Postgraduate studies DEA in medical technologies from the University of Technology in Compiègne – France – 1996, with a grant from the Agence Universitaire de la Francophonie (AUF).</li>
+	  <li>Engineer in Electrical and Electronics from the Faculty of Engineering – Lebanese University – 1995.</li>
+    </ul>
+  </details>
+
+  <details id="sum-experience" open>
+    <summary>Academic and community experience and achievements</summary>
+    <ul>
+  <li>Member of the Scientific Council of the Doctoral School in Science and Technology – Lebanese University since 2008.</li>
+  <li>Coordinator of the Master of the Internet of Things and Smart Systems at the Faculty of Engineering – Lebanese University.</li>
+  <li>He is responsible for two projects funded by the European Union in cooperation with the Lebanese University, in the fields of smart hydroponics and the conversion of wastewater into water for agricultural irrigation.</li>
+  <li>Publisher and author of more than 100 international scientific papers in international refereed and classified journals.</li>
+  <li>Active participant in more than 180 international conferences in Lebanon, the region, Europe and Australia, as a researcher, lecturer and keynote speaker.</li>
+  <li>Refereed member of many international scientific journals.</li>
+  <li>Invited academically and research from prestigious international universities and scientific centers (Australia, France, etc.) to contribute to lectures, projects and scientific workshops.</li>
+  <li>Member of IEEE since 1995 and refereed in its scientific journals.</li>
+  <li>Member of the international jury of the Prix Roberval Award for the selection of the best books and scientific and technological journals, organized annually by the University of Technology in Compiègne – France.</li>
+  <li>Current supervisor of five doctoral theses in the fields of artificial intelligence, medical engineering and neurology.</li>
+  <li>Former supervisor of more than 50 doctoral theses and dozens of master's theses.</li>
+  <li>Participant in the juries of dozens of doctoral discussions in Lebanon and abroad.</li>
+  <li>Coordinator and responsible for the ICABME International Conference in Biomedical Engineering, organized periodically in Lebanese universities from 2009 to 2025.</li>
+  <li>Keynote Speaker at many international scientific conferences.</li>
+  <li>Founder and President of IEEE Biomedical Engineering Branch in Lebanon between 2014 and 2020.</li>
+  <li>Elected Representative for the Middle East and Africa on the EMBS – IEEE Administrative Board between 2017 and 2023.</li>
+  <li>Lecturer at Pharos University – Alexandria in 2025 as part of a training program on artificial intelligence for university professors, organized by the University Agency of La Francophonie (AUF).</li>
+  <li>Mayor of Akkar Atika from 2019 to 2025, elected municipal council member since 2004, and contributor to the leadership and implementation of many European and local projects and cultural and environmental activities in the town.</li>
+    </ul>
+  </details>
+   <details id="sum-award" open>
+    <summary>Awards and Recognitions</summary>
+    <ul>
+     <li>He received the Best Distinguished Supervising Professor Award for the years 2004 and 2005 from the Association of Lebanese Industrialists, in recognition of his efforts in supervising graduation projects with industrial impact.</li>
+  <li>Recipient of the 2013 Innovation Award from the Agence Universitaire de la Francophonie (AUF) in collaboration with LASER, for a distinguished project in educational technology.</li>
+  <li>Winner of the Best Innovative Research Project Award from the Lebanese Ministry of Industry in 2014 and 2016, for projects of an applied nature in the fields of engineering and technology.</li>
+  <li>Winner of the National Council for Scientific Research (CNRS) Award as the best researcher in the field of engineering sciences for the year 2015, he was officially honored at the Lebanese Government Palace.</li>
+  <li>He was awarded the Liban Ligue de l'Ordre de l'Honneur du Liéon du Ligue de l'Honor in 2016, in recognition of his scholarly contributions to academic cooperation between Lebanon and France.</li>
+  <li>Honored by many national and international societies in recognition of his pioneering role in scientific research, innovation, and service to the academic community.</li>
+    </ul>
+  </details>
+   <details id="sum-theme" open>
+    <summary>Research Themes</summary>
+     <li>Capture and analyze uterine signals to detect premature births using artificial intelligence</li>
+  <li>Analysis of head signals with artificial intelligence in order to detect Alzheimer's, Parkinson's and depression diseases</li>
+  <li>Research on Brain Computer Interface</li>
+  <li>Analysis of medical images by artificial intelligence – capturing cardiac signals and analyzing them in order to record them in the lowest possible size</li>
+  <li>Pre-detection of practical problems of machines in factories through the study of concussive signals</li>
+  </details>
+</div>
+
+<!-- Detailed Tab Content -->
+<div id="content-detail" class="tab-content" role="tabpanel" aria-labelledby="tab-detail">
+  <div class="toc">
+    <h3>Detailed Table of Contents</h3>
+    <ul>
+      <li><a href="#d-contact">Personal and Contact Information</a></li>
+      <li><a href="#d-sit">Actual Situation</a></li>
+      <li><a href="#d-dip">Diplomas</a></li>
+      <li><a href="#d-publications">Synthesis of publications</a></li>
+      <li><a href="#d-main">Theme of main research</a></li>
+	  <li><a href="#d-finance">Financing my projects</a></li>
+      <li><a href="#d-sup">Supervizing PHD Students</a></li>
+      <li><a href="#d-jury">Participation PHD Jury</a></li>
+      <li><a href="#d-master">Supervising Master Research Master</a></li>
+      <li><a href="#d-teach">Teaching activities</a></li>
+	  <li><a href="#d-teacheng">Teaching engineering level</a></li>
+      <li><a href="#d-teachmaster">Teaching master</a></li>
+	  <li><a href="#d-teachinternational">Teaching at international level</a></li>
+      <li><a href="#d-exp">Experiences ,Trainings</a></li>
+      <li><a href="#d-community">Involvement in scientific community</a></li>
+      <li><a href="#d-comp">Complements of formation</a></li>
+      <li><a href="#d-admin">Administrative Activities</a></li>
+	  <li><a href="#d-social">Social Acitivities</a></li>
+      <li><a href="#d-prices">Prices and recognition</a></li>
+      <li><a href="#d-other">Other knowledge</a></li>
+      <li><a href="#d-pub">Internatiomal peer reviewed  journal articles</a></li>
+	    <li><a href="#d-pubnational">National journal articles</a></li>
+	  <li><a href="#d-conf">Peer reviewed conferences</a></li>
+	  <li><a href="#d-report">Works,Reports</a></li>
+	  
+    </ul>
+  </div>
+
+  <details id="d-contact" open>
+    <summary>Personal and Contact Information</summary>
+    <div class="cv-header">
+    
+    <p><strong>Born:</strong> 26 May 1973, Akkar Atika – Lebanon (52 years old)</p>
+    <p><strong>Nationality:</strong> Lebanese</p>
+    <p><strong>Marital Status:</strong> Married, four children (2002, 2005, 2006, 2010)</p>
+  </div>
+
+  <div class="cv-grid">
+    <div class="info-block">
+      <div class="section-title">🏠 Home Address</div>
+      <p>Elmina roundabout (central Elmina)</p>
+      <p>Build. Mina Plaza 2 – Block A</p>
+      <p>Elmina, Tripoli, Lebanon</p>
+      <p><strong>Tel:</strong> 03 396 747, 06 213 449</p>
+      <p><strong>Fax:</strong> 06 213 253</p>
+    </div>
+
+    <div class="info-block">
+      <div class="section-title">🏢 Work Address</div>
+      <p>Lebanese University</p>
+      <p>Doctoral School for Sciences and Technology</p>
+      <p>Director of Azm Centre for Research in Biotechnology</p>
+      <p>Mitein Street, Tripoli, Lebanon</p>
+      <p><strong>Email:</strong> <a href="mailto:mkhalil@ieee.org">mkhalil@ieee.org</a></p>
+      <p><strong>Email:</strong> <a href="mailto:mohamad.khalil@ul.edu.lb">mohamad.khalil@ul.edu.lb</a></p>
+    </div>
+  </div>
+
+  </details>
+
+  <details id="d-sit" open>
+    <summary>Actual Situation</summary>
+	<div class="table-wrapper">
+     <table>
+		<tr>
+		  <td class="date">From October 2008</td>
+		  <td>Full-time Professor at Lebanese University, Faculty of Engineering</td>
+		</tr>
+		<tr>
+		  <td class="date">From January 2009</td>
+		  <td>Director of Azm Centre for Research in Biotechnology and Applications,<br>
+			  Doctoral School for Sciences and Technology, Lebanese University</td>
+		</tr>
+	  </table>
+	  </div>
+  </details>
+
+  <details id="d-dip" open>
+    <summary>Diplomas</summary>
+	<div class="table-wrapper">
+    <table>
+    <tr>
+      <td class="date">2012</td>
+      <td>
+        Qualification CNU Professeur – Section 61 (Génie informatique, Automatique et traitement du signal)<br>
+        No. 12161098067, dated 27-01-2012.
+      </td>
+    </tr>
+    <tr>
+      <td class="date">2006</td>
+      <td>
+        HDR (Habilitation to Supervise Research), University of Technology of Compiègne (UTC), specialty: biomedical.<br>
+        Title: "Detection and classification in nonstationary signals. Application to medical signals."<br>
+        Defense: March 14, 2006.
+      </td>
+    </tr>
+    <tr>
+      <td class="date">2000</td>
+      <td>
+        CNU Qualification – Section 61 (Computer Engineering, Automation and Signal Processing)<br>
+        Qualification No.: 00261098067, dated 17-03-2000.
+      </td>
+    </tr>
+    <tr>
+      <td class="date">1999</td>
+      <td>
+        Ph.D. in Security Systems (Biomedical), University of Technology of Compiègne (UTC), France,<br>
+        in collaboration with University of Technology of Troyes (UTT).<br>
+        Degree: Very honorable with congratulations of the jury.
+      </td>
+    </tr>
+    <tr>
+      <td class="date">1996</td>
+      <td>
+        MS in Biomedical Engineering, University of Technology of Compiègne (UTC), France.<br>
+        Rank: 3rd out of 40.
+      </td>
+    </tr>
+    <tr>
+      <td class="date">1995</td>
+      <td>
+        Electrical Engineer – Electronics, Lebanese University (UL), Faculty of Engineering I, Tripoli, Lebanon.<br>
+        Degree: Excellent – Rank: 1st out of 17.
+      </td>
+    </tr>
+    <tr>
+      <td class="date">1992</td>
+      <td>
+        Two preparatory years (common trunk), Lebanese University, Faculty of Engineering I, Tripoli, Lebanon.<br>
+        Degree: Very Good – Rank: 1st out of 44.
+      </td>
+    </tr>
+    <tr>
+      <td class="date">1990</td>
+      <td>
+        Lebanese Baccalaureate, Series C (Mathematics).<br>
+        Degree: Good.
+      </td>
+    </tr>
+  </table>
+  </div>
+  </details>
+
+  <details id="d-publications" open>
+    <summary>Synthesis of publications</summary>
+    <p>The detailed list of publications can be found at the end of this CV:<br><br>
+
+• 100 articles in peer-reviewed journals<br>
+&nbsp;&nbsp;&nbsp;&nbsp;92 articles in international journals, published<br>
+&nbsp;&nbsp;&nbsp;&nbsp;8 national articles<br>
+• 180 papers at congresses with acts<br><br>
+
+My research is currently taking place at the <strong>AZM Center for Research in Biotechnology and Applications</strong>, of which I am the director. Composed of 54 Teacher-Researchers including 14 Professors, this research center was created by the Doctoral School in Science and Technology. It is the result of a project that I had the honor to carry, funded by the AZM association and SAADE and the Lebanese University, up to two million dollars.<br><br>
+
+Four research laboratories are housed in this center:<br>
+• the physics laboratory<br>
+• the microbiology laboratory<br>
+• the biotechnology laboratory<br>
+• the LASTRE laboratory (Laboratory of Electronic Systems, Telecommunications and Networks)<br><br>
+
+In the <strong>LASTRE laboratory</strong>, I am also responsible for the <strong>Biomedical research axis</strong> of the Electronic Systems team. The main axes of this laboratory are:<br>
+• medical robotics<br>
+• electronic systems<br>
+• signal and image processing<br>
+• telecommunications and networks<br><br>
+
+My research activities focus mainly on <strong>multidisciplinarity</strong>; in the field of biomedical instrumentation, as well as in the treatment of physiological signals and medical instrumentation.<br><br>
+
+I am particularly active in a collaborative context with French universities including:<br><br>
+
+• the <strong>University of Technology of Troyes</strong> – Detection and Classification (collaboration with Prof. Jacques Duchêne)<br>
+• the <strong>Compiègne University of Technology</strong> – Classification in uterine EMG signals (Prof. Catherine Marque)<br>
+• the <strong>Universities of Rouen-Le Havre</strong> – Detection of ruptures in signals for operational safety (Prof. Dimitri Lefebvre)<br>
+• the <strong>University Paris Est Créteil (UPEC)</strong> – Biometrics and ECG signal compression (Prof. Amine Nait-Ali)<br>
+• the <strong>University of Rennes 1</strong> – Neurology (Prof. Fabrice Wendling), ECG signal processing and imaging (Profs. Guy Carrault and Olivier Deforges)<br>
+• the <strong>University of Lille 1</strong> – Robotics and intelligent vehicles (Prof. Maan Badaoui Najjar)<br><br>
+
+These collaborations are mainly carried out through <strong>cotutelle theses</strong>.
+
+</p>
+</p>
+  </details>
+
+  <details id="d-main" open>
+    <summary>Theme of main research</summary>
+   <p style="line-height: 1.8; font-family: 'Segoe UI', sans-serif; text-align: justify;">
+
+My research focuses on the <strong>detection and classification</strong> aspect of <strong>non-stationary signals</strong>. The objective is to propose <strong>adaptive detection algorithms</strong> in the case of lack of knowledge of the parameters of the events to be detected in <strong>uterine EMG signals</strong>.<br><br>
+
+One of the variants consists in using the <strong>wavelet-type multi-resolution</strong> approaches in the sequential detection phases. <strong>Fast algorithms</strong> have also been proposed.<br><br>
+
+This research work is currently reinforced thanks to the many <strong>co-supervised theses</strong>, particularly in the context of collaboration with <strong>UTC</strong>. A <strong>comparative study</strong> will soon be carried out, requiring <strong>acquisition campaigns</strong>, both in France and in Lebanon. The goal is to <strong>model and predict the threats of preterm birth</strong>.<br><br>
+
+In the same context of biomedical research, I am interested in the study and modeling of other types of signals such as <strong>ECG</strong>, in collaboration with the <strong>University Paris-Créteil (UPEC)</strong> (<em>Prof. Amine Nait-Ali</em>), especially on <strong>biometric applications</strong>.<br><br>
+
+The treatment of <strong>parsimonious images</strong> for applications on <strong>MRI</strong> (accelerated reconstruction) is another area of research with <strong>INSA Lyon</strong> (<em>Prof. Rémy Prost</em>).<br><br>
+
+Recently, a new thesis was launched, in collaboration with the <strong>Laboratory LTSI</strong> (<strong>Rennes 1</strong>, <em>Profs. Guy Carrault and Alfredo Hernandez</em>) for the <strong>modeling of the ECG</strong> and the analysis of <strong>cardiac variability</strong>.<br><br>
+
+In recent years, I have been invited by several universities as a <strong>visiting professor</strong> or for <strong>laboratory visits</strong>:<br><br>
+
+• <strong>Paris Est-Créteil</strong> (<em>Prof. Amine Nait-Ali</em>)<br>
+• <strong>Compiègne</strong> (<em>Prof. Catherine Marque</em>)<br>
+• <strong>Troyes</strong> (<em>Prof. Jacques Duchêne</em>)<br>
+• <strong>Free University of Brussels</strong> (<em>Olivier Debeir</em>)<br>
+• <strong>Surrey University – UK</strong> (<em>Prof. David Ewins</em>)<br>
+• <strong>Rennes 1</strong> (<em>Prof. Gais El Zein, Prof. Guy Carrault</em>)<br>
+• <strong>Le Havre</strong> (<em>Prof. Dimitri Lefebvre</em>)<br>
+• <strong>Roanne</strong> (<em>Prof. Mohamad Badaoui</em>)<br>
+• <strong>Rouen</strong> (<em>Prof. Ghaleb Hoblos</em>)<br>
+• <strong>UPEC</strong> (<em>Prof. Samer Mohammed</em>)<br>
+• <strong>Nantes</strong> (<em>Prof. Safwan Asaad</em>)<br>
+
+</p>
+  </details>
+  
+  
+    <details id="d-finance" open>
+    <summary>Financing my projects</summary>
+    <p style="font-family: 'Segoe UI', sans-serif; line-height: 1.8; text-align: justify;">
+		My research projects have been funded by several Lebanese and foreign organizations such as 
+		<strong>AUF</strong> (Agence Universitaire de la Francophonie), 
+		<strong>CNRS-L</strong> (Lebanese National Center for Scientific Research), 
+		<strong>CEDRE</strong>, and the <strong>Lebanese University (UL)</strong>.<br><br>
+		The table below summarizes the funded projects I have carried.
+		</p>
+		
+  <style>
+    table.project-table {
+      
+     
+      font-size: 15px;
+    }
+
+    table.project-table th,
+    table.project-table td {
+      padding: 12px 20px;
+      vertical-align: top;
+      background-color: #fff;
+    }
+
+    table.project-table thead th {
+      background-color: #eef6ff;
+      color: #005fa3;
+      border-bottom: 2px solid #ccc;
+    }
+
+    table.project-table tbody tr:nth-child(even) td {
+      background-color: #f9f9f9;
+    }
+
+    /* Extra spacing between specific columns */
+    table.project-table td:nth-child(1),
+    table.project-table th:nth-child(1) { padding-right: 30px; }
+    table.project-table td:nth-child(2),
+    table.project-table th:nth-child(2) { padding-right: 40px; }
+    table.project-table td:nth-child(3),
+    table.project-table th:nth-child(3) { padding-right: 30px; }
+    table.project-table td:nth-child(4),
+    table.project-table th:nth-child(4) { padding-right: 30px; }
+  </style>
+  <div class="table-wrapper">
+  <table class="project-table">
+    <thead>
+      <tr>
+        <th>Organisme</th>
+        <th>Nom du projet</th>
+        <th>Partenaires</th>
+        <th>Montant</th>
+        <th>But du financement</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AUF-PCSI (2004)</td>
+        <td>Détection et Classification par multirésolution des signaux non stationnaires</td>
+        <td>Le Havre (Fr), Oran (Alger)</td>
+        <td>21,000 €</td>
+        <td>Séjours, Congrès</td>
+      </tr>
+      <tr>
+        <td>CEDRE (2005)</td>
+        <td>Identification de changement dans les signaux non stationnaires</td>
+        <td>Le Havre</td>
+        <td>20,000 €</td>
+        <td>Voyages, Séjours, Équipements</td>
+      </tr>
+      <tr>
+        <td>CNRS-L (2008)</td>
+        <td>Détection des menaces d’accouchements prématurés</td>
+        <td>UTC</td>
+        <td>15 MLL ou 10,000 €</td>
+        <td>Achat des équipements</td>
+      </tr>
+      <tr>
+        <td>CEDRE (2013–2014)</td>
+        <td>Traitement ECG par noyaux</td>
+        <td>Rennes 1</td>
+        <td>10,000 €</td>
+        <td>Voyages, Petit fonctionnement, Séjour</td>
+      </tr>
+      <tr>
+        <td>UL (2012)</td>
+        <td>Équipe Systèmes Électronique</td>
+        <td>UL-EDST</td>
+        <td>16 MLL ou 10,500 $</td>
+        <td>Voyages, Congrès, Équipements</td>
+      </tr>
+      <tr>
+        <td>AUF-PCSI (2015–2016)</td>
+        <td>Détection des menaces d’accouchements prématurés</td>
+        <td>UL, USEK, UTC</td>
+        <td>20,000 €</td>
+        <td>Séjours, Congrès</td>
+      </tr>
+      <tr>
+        <td>CNRS (2015–2016)</td>
+        <td>Détection de l’épilepsie</td>
+        <td>Rennes 1</td>
+        <td>26 MLL</td>
+        <td>Voyages, Séjours, Équipements</td>
+      </tr>
+      <tr>
+        <td>UL (2015–2016)</td>
+        <td>Traitement de l’EEG : BCI</td>
+        <td>Rennes 1</td>
+        <td>54 MLL</td>
+        <td>Voyages, Étudiants, Équipements</td>
+      </tr>
+      <tr>
+        <td>CEDRE (2017–2018)</td>
+        <td>Identification de source et analyse de connectivité des signaux EMG utérins</td>
+        <td>UTC</td>
+        <td>10,000 €</td>
+        <td>Voyages, Étudiants, Séjours</td>
+      </tr>
+      <tr>
+        <td>UL (2016–2019)</td>
+        <td>Neurology</td>
+        <td>Rennes</td>
+        <td>17 MLL</td>
+        <td>Équipements, Étudiants</td>
+      </tr>
+      <tr>
+        <td>UL (2021–2022)</td>
+        <td>Neurology</td>
+        <td>Rennes</td>
+        <td>21 MLL</td>
+        <td>Équipements, Consumables</td>
+      </tr>
+      <tr>
+        <td>UL (2022–2025)</td>
+        <td>Neurology</td>
+        <td>Rennes</td>
+        <td>63 MLL</td>
+        <td>Équipements, Consumables</td>
+      </tr>
+      <tr>
+        <td>PRIMA EU Project</td>
+        <td>Environnement</td>
+        <td>Greece</td>
+        <td>250 K €</td>
+        <td>Living LAB construction</td>
+      </tr>
+      <tr>
+        <td>ENI CBC MED EU Project</td>
+        <td>Environnement</td>
+        <td>Greece, Malta</td>
+        <td>664 K €</td>
+        <td>Waste water APOC System</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+	</details>
+	
+	<details id="d-sup" open>
+    <summary>Supervizing PHD Students</summary>
+     <p style="font-size: 16px; line-height: 1.8; color: #333; text-align: justify;">
+    Over the past <strong>23 years</strong>, I have supervised <strong>40 PhD students</strong> in diverse and advanced topics spanning 
+    artificial intelligence, biomedical engineering, and signal processing.
+	  </p>
+
+
+		<p style="margin: 0; font-size: 16px; color: #005fa3;">
+		  <strong>Currently supervising:</strong> <span style="color: #000;">3 PhD students</span>
+		</p>
+	  
+  </details>
+  <details id="d-jury" open>
+    <summary>Participation PHD  JURY</summary>
+	<div class="table-wrapper">
+     <table style=" margin-top: 20px; font-size: 15px;">
+    <thead>
+      <tr style="background-color: #eef6ff; color: #005fa3;">
+        <th style="padding: 10px 20px; text-align: left;">Number of Theses</th>
+        <th style="padding: 10px 20px; text-align: left;">Role</th>
+        <th style="padding: 10px 20px; text-align: left;">Universities</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: #ffffff;">
+        <td style="padding: 12px 20px;">30 PhD</td>
+        <td style="padding: 12px 20px;">Examiner</td>
+        <td style="padding: 12px 20px;">Lebanese, French</td>
+      </tr>
+      <tr style="background-color: #f9f9f9;">
+        <td style="padding: 12px 20px;">20 PhD</td>
+        <td style="padding: 12px 20px;">Reviewer</td>
+        <td style="padding: 12px 20px;">Lebanese, AUB, BAU, French</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </details>
+  <details id="d-master" open>
+    <summary>Supervising Master Research Master</summary>
+	<div class="table-wrapper">
+     <table style=" margin-top: 20px; font-size: 15px;">
+    <thead>
+      <tr style="background-color: #eef6ff; color: #005fa3;">
+        <th style="padding: 10px 20px; text-align: left;">Number</th>
+        <th style="padding: 10px 20px; text-align: left;">Domain</th>
+        <th style="padding: 10px 20px; text-align: left;">Laboratory</th>
+        <th style="padding: 10px 20px; text-align: left;">University</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: #ffffff;">
+        <td style="padding: 12px 20px;">8</td>
+        <td style="padding: 12px 20px;">Détection, classification signal</td>
+        <td style="padding: 12px 20px;">Centre AZM</td>
+        <td style="padding: 12px 20px;">Liban – France</td>
+      </tr>
+      <tr style="background-color: #f9f9f9;">
+        <td style="padding: 12px 20px;">2</td>
+        <td style="padding: 12px 20px;">Implémentation DSP</td>
+        <td style="padding: 12px 20px;">Centre AZM</td>
+        <td style="padding: 12px 20px;">Liban – France</td>
+      </tr>
+      <tr style="background-color: #ffffff;">
+        <td style="padding: 12px 20px;">5</td>
+        <td style="padding: 12px 20px;">Diagnostic</td>
+        <td style="padding: 12px 20px;">Crystal, Greah, AZM</td>
+        <td style="padding: 12px 20px;">Liban – France</td>
+      </tr>
+      <tr style="background-color: #f9f9f9;">
+        <td style="padding: 12px 20px;">5</td>
+        <td style="padding: 12px 20px;">Compression ECG</td>
+        <td style="padding: 12px 20px;">UPEC, AZM, CSRT</td>
+        <td style="padding: 12px 20px;">Liban – France</td>
+      </tr>
+      <tr style="background-color: #ffffff;">
+        <td style="padding: 12px 20px;">4</td>
+        <td style="padding: 12px 20px;">Images Médicales</td>
+        <td style="padding: 12px 20px;">UPEC, AZM, CSRT</td>
+        <td style="padding: 12px 20px;">Liban – France</td>
+      </tr>
+      <tr style="background-color: #f9f9f9;">
+        <td style="padding: 12px 20px;">5</td>
+        <td style="padding: 12px 20px;">Analyse de Posture</td>
+        <td style="padding: 12px 20px;">LISSI, AZM, CRST, UL</td>
+        <td style="padding: 12px 20px;">Liban – France</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </details>
+   <details id="d-teach" open>
+    <summary>Teaching Activities</summary>
+	<div class="universities">
+    <p><strong>The teaching lectures are shared between:</strong></p>
+    <ul>
+      <li>Troyes University of Technology, France (UTT)</li>
+      <li>Lebanese University, Faculty of Engineering, B1, Tripoli, Lebanon (UL)</li>
+      <li>University Center of Technology Franco-Lebanese, Deddeh-Lebanon (CUT)</li>
+      <li>Islamic University of Lebanon (UIL)</li>
+      <li>University of Saint Joseph - ESIB</li>
+      <li>ESIGELEC (Rouen, France)</li>
+    </ul>
+  </div>
+
+  <div class="courses">
+    <p><strong>Courses:</strong></p>
+    <ul>
+      <li>Interfacing microinformatic systems (TP), UTT France</li>
+      <li>Circuits of analog and digital electronics (TD, TP), UTT France</li>
+      <li>Technology and maintenance in electronics (Courses, TD and TP), CUT Lebanon</li>
+      <li>Electronic Physics (TD), UTT France</li>
+      <li>Microprocessors (Courses, TD and TP), UIL Lebanon</li>
+      <li>Instrumentation (Course), UL Lebanon</li>
+      <li>Biomedical Electronics (Courses, TD), UL and UIL, Lebanon</li>
+      <li>Medical Imaging (Course, TD), UL and UIL, Lebanon</li>
+      <li>Digital Signal Processing (Course, TD and TP), UL Lebanon</li>
+      <li>Industrial Informatics (Courses, TD and TP), CUT Lebanon</li>
+      <li>Modeling and Numerical Analysis (Course and TP), UL Lebanon</li>
+      <li>Signals and Systems (Course, TD and TP), CUT Lebanon</li>
+      <li>Random Signals (Course, TD, TP), UIL Lebanon</li>
+      <li>Medical Applications for IT – ESIB</li>
+      <li>Artificial Vision – ESIB</li>
+      <li>Image Processing – ESIB, UL, and UIL</li>
+      <li>Medical Instrumentation – ESIB</li>
+    </ul>
+  </div>
+	</details>
+	
+	 <details id="d-teacheng" open>
+    <summary>Teaching engineering level</summary>
+	<div class="intro">
+    <p>
+      My participation in teaching in engineering education includes several courses. Several modules were created by myself 
+      (PowerPoint support) in Lebanon, and I prepared the TPs for all these modules.
+    </p>
+  </div>
+
+  <div class="course">
+    <h2>Pattern Recognition (21H Courses + TD)</h2>
+    <p>
+      This course covers parametric classification (likelihood ratio, Bayes criteria with and without rejection), nonparametric classification 
+      (Parzen and KPPV methods), and principal component analysis. Neural networks: Adaline, Delta, Perceptron, backpropagation, radial function, 
+      competitive networks. TPs are created using MATLAB or Python.
+    </p>
+  </div>
+
+  <div class="course">
+    <h2>Microprocessors (42H Courses + TD)</h2>
+    <p>
+      Designed for students in biomedical, computer, and telecommunications specializations. It introduces logic integrated circuits 
+      and microprocessor architecture, including assembly programming and I/O management. Full support material for courses, TD, and TP was prepared.
+    </p>
+  </div>
+
+  <div class="course">
+    <h2>Microcontrollers and Interfaces (42H Courses + TD)</h2>
+    <p>
+      For computer and biomedical students. Focused on the PIC microcontroller (16F84, 16F877), including LCD, stepper motor, keyboard, graphic LCD, 
+      PLC interfacing. I created a specialized lab and introduced DSP concepts.
+    </p>
+  </div>
+
+  <div class="course">
+    <h2>Biomedical Electronics – Sensors and Instrumentation (84H Courses + TD + TP)</h2>
+    <p>
+      Aimed at biomedical and electronics students. Covers instrumentation design, biomedical signal acquisition, processing, 
+      and transmission. Includes medical imaging (Ultrasound, MRI, X-ray, CT), and devices such as respirators, photometers, spectrophotometers, 
+      hemodialysis, and hematology tools. MATLAB TPs included.
+    </p>
+  </div>
+
+  <div class="course">
+    <h2>Instrumentation (32H Courses + Tutorials)</h2>
+    <p>
+      Introduces acquisition chain elements (conditioner, amplifier, multiplexer, ADC/DAC) and microprocessor interfaces. 
+      Includes hands-on LABVIEW TPs with National Instruments acquisition boards.
+    </p>
+  </div>
+
+  <div class="course">
+    <h2>Digital Signal Processing (42H Courses + TD)</h2>
+    <p>
+      Covers numerical correlation, convolution, linear systems, discrete and fast Fourier transforms, and digital filter design (FIR, IIR). 
+      Includes practical MATLAB sessions which I also implemented.
+    </p>
+  </div>
+
+	</details>
+	 <details id="d-teachmaster" open>
+    <summary>Teaching master</summary>
+	            <div class="intro">
+                <p>
+                   I taught the following M2R courses:
+                </p>
+            </div>
+
+            <div class="course">
+                <h2>Probability and Statistics (12 H Courses + TD UL)</h2>
+                <p>
+                    This course, taught in mechanical DEA at the Lebanese University, recalls theories of probability, reliability, statistical laws, 
+                    and hypothesis testing. An introduction is also provided on the likelihood ratio and its use for detection and classification in signals.
+                </p>
+            </div>
+
+            <div class="course">
+                <h2>Time Frequencies and Wavelets (Master UTC-UIL and Master Le Havre)</h2>
+                <p>
+                    This course covers frequency-time concepts, such as windowed Fourier transform, Wigner-Ville distribution, and other bilinear 
+                    time-frequency representations. Additionally, it covers time scales, the wavelet transform, subband decomposition, multi-resolution 
+                    analysis, and the types of wavelets. TPs are conducted under Matlab.
+                </p>
+            </div>
+
+            <div class="course">
+                <h2>Image Processing (28 hours of course + TD)</h2>
+                <p>
+                    This course is designed for students in the biomedical sector, aiming to familiarize them with techniques, equipment, and medical 
+                    image processing. Topics include acquisition, visualization, enhancement and correction, image compression, and image transfer 
+                    in the biomedical context. TP was created for this course.
+                </p>
+            </div>
+
+            <div class="course">
+                <h2>Advanced Signal Processing (32H Course + TD)</h2>
+                <p>
+                    This advanced course in signal processing covers AutoRegressive Modeling (AR), Moving Average (MA), ARMA, Time Frequency, 
+                    Time Scale (wavelets), estimation and parameterization, detection, and classification in signals. It also introduces form recognition. 
+                    The module was created at the Lebanese University and ESIGELEC in Rouen, France, along with its TP.
+                </p>
+            </div>
+
+            <div class="course">
+                <h2>Computer Vision (25 Hours) (Master in Biometry, France, English)</h2>
+                <p>
+                    This advanced course focuses on computer vision techniques, such as image segmentation, stereo vision, stereo construction, 
+                    camera calibration, stereo calibration, correspondence, image recognition, and convolutional neural networks.
+                </p>
+            </div>
+
+            <div class="course">
+                <h2>Machine Learning and Deep Learning (32 hours)</h2>
+                <p>
+                    This course provides an introduction to pattern recognition and neural networks, covering topics such as Adaline, Delta, 
+                    Perceptron, backpropagation, radial functions, competitive networks, and Convolutional Neural Networks (CNNs) and their families. 
+                    It also covers semantic segmentation and classification with Python Labs.
+                </p>
+            </div>
+	</details>
+	 <details id="d-teachinternational" open>
+    <summary>Teaching at international level</summary>
+	  <ul>
+			<li><strong>UPEC - Creteil, France</strong>: Master Biometry, M1 and M2, Course on Artificial Vision, Neural Networks, Speech Processing</li>
+			<li><strong>Rennes, France</strong>: ESIR 3rd-year students, Course on Machine Learning</li>
+			<li><strong>Lille, France</strong>: M2 Robotics, Course on Artificial Vision</li>
+			<li><strong>Poitiers, France</strong>: M1 and M2 students, Computer Vision and Machine Learning</li>
+			<li><strong>Peter the Great St. Petersburg Polytechnic University</strong>: Intelligent Data Analysis</li>
+			<li><strong>Compiegne, France</strong>: Master student, Biomedical</li>
+			<li><strong>Paris Saclay, France</strong>: Various Courses</li>
+		</ul>
+	</details>
+	 <details id="d-exp" open>
+    <summary>Experiences , Trainings</summary>
+	 
+
+	  <style>
+	  .entry {
+		background-color: #eef6ff;
+		border-left: 5px solid #005fa3;
+		padding: 18px 22px;
+		margin-bottom: 20px;
+		border-radius: 10px;
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+	  }
+
+	  .entry .period {
+		font-weight: bold;
+		color: #003366;
+		font-size: 16px;
+		margin-bottom: 8px;
+	  }
+
+	  .entry .title {
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 6px;
+		color: #005fa3;
+	  }
+
+	  .entry .details {
+		font-size: 15px;
+		color: #333;
+		line-height: 1.6;
+	  }
+	</style>
+
+	<div class="entry">
+	  <div class="period">February 1995 – July 1995</div>
+	  <div class="title">Final Project – Lebanese University</div>
+	  <div class="details">
+		Electronics and Image Processing<br>
+		<strong>Subject:</strong> Realization of an interface card with a PC, command of a "Robotic Hand".<br>
+		<strong>Supervisor:</strong> Dr. Youssef Daher, Faculty of Engineering I
+	  </div>
+	</div>
+
+	<div class="entry">
+	  <div class="period">August 1994 – September 1994</div>
+	  <div class="title">Technician Internship – INTERMEDIC (Philips), Beirut</div>
+	  <div class="details">
+		<strong>Subject:</strong> Repair of biomedical devices.<br>
+		<strong>Responsible:</strong> Mr. Sherif Diab, Intermedic Society, P.O. Box 11-4245, Beirut, Lebanon
+	  </div>
+	</div>
+	</details>
+	 <details id="d-community" open>
+    <summary>Involvement in scientific community</summary>
+	<ul>
+  <li>Middle East and North America (MENA) region IEEE EMBS representative. Elected 2 times in 2016 and 2019.</li>
+  <li>Chair of the IEEE EMBS Chapter in Lebanon. IEEE EMBS Lebanon chapter chair since December 2014–2021.</li>
+  <li>Organization and President of the ICABME International Conference: International Conference on Advances in BioMedical Engineering 2013, in collaboration with several universities in Lebanon and France (6–8 July 2011, 11–13 September 2013, 16–18 September 2015, 2017, 2019, 2021, 2023).</li>
+  <li>Organizer on behalf of the EDST of the LAAS20, LAAS21, LAAS22, LAAS23, LAAS24 conference (27–29 March 2014, April 2015, April 2016), Beirut, Lebanon.</li>
+  <li>From February 2011 to May 2012: Member of the Franco-Lebanese Committee (Cooperation for the Evaluation and Development of Research), CEDRE.</li>
+  <li>Member of the Scientific Committee in the conference: Modeling and Simulation, MS05, Rouen, July 2005; Member of the Scientific Committee of "Fourth International Symposium on Electrical and Electronics Engineering", European University of Lefke, November 30 – December 1, 2006. Member of the Scientific Committee of the Conference: Diagnosis and Control, University of Le Havre, May 2009, France. Member of the organizing committee of the conference CIRUISEF, Beirut, November 2010.</li>
+  <li>September 2004–September 2008: Director of the Biomedical Department at the Islamic University of Lebanon (several Scientific Days were organized).</li>
+  <li>Representative of the Electricity / Electronics Department of the Lebanese University in several CEDRE cooperation projects: collaborations with Lille1 and Roanne universities.</li>
+  <li>Reviewer of several articles submitted to "IEEE Transactions in Biomedical Engineering", two articles for "IEEE Transactions in Signal Processing", and several articles for "Smart Engineering System Design", as well as project reviewer for CNRS-L.</li>
+  <li>Member of the LEPAC National Technical Committee: "Lebanese Engineering Program Accreditation Committee". (An accreditation internship at CTI in France in January 2008 was completed in this context).</li>
+  <li>Expertise in research projects funded by the CNRS-L.</li>
+  <li>Proposal and direction of several end-of-studies projects since October 1999, engineering cycle, at the Lebanese University, Faculty of Engineering, Tripoli, Lebanon (10 projects in the fields of signal processing, microcontroller, DSP, acquisition chains). Programs used: Matlab, Labview.</li>
+  <li>Proposal and direction of several end-of-studies projects since October 1999, engineering cycle, at the Islamic University of Lebanon, biomedical department (25 projects in medical electronics, physiological signal acquisition/processing, telemetry, interfacing, biomedical systems). Programs used: Visual Basic, Matlab, Labview.</li>
+  <li>Editor-in-Chief of the Lebanese Science Journal, CNRS, Lebanon.</li>
+</ul>
+	</details>
+	 <details id="d-comp" open>
+    <summary>Complements of formation</summary>
+	<div class="timeline-entry">
+    <div class="timeline-date">February 1997</div>
+    <div class="timeline-title">Complementary Training – ENSEA, Cergy, France</div>
+    <div class="timeline-desc">
+      20-hour course on frequency presented by Mr. Patrick Flandrin, CNRS Research Director, ENS Lyon.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">July 1997</div>
+    <div class="timeline-title">International Summer School – Marseille-Luminy, France</div>
+    <div class="timeline-desc">
+      Topic: Wavelets, Signal Analysis, Simulation, and Probabilistic Models. Responsible: Prof. Bruno Torrésani.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">June–July 1999</div>
+    <div class="timeline-title">IEEE-EMBS International Summer School – Siena, Italy</div>
+    <div class="timeline-desc">
+      Topic: Advanced Biomedical Signal Processing for Clinical Applications. Responsible: Prof. Cergio Cerruti and Prof. Metin Akay.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">September 2002</div>
+    <div class="timeline-title">Summer School – Jordan University of Science and Technology</div>
+    <div class="timeline-desc">
+      Topic: Programmable instrumentation, LabVIEW, and instrumentation nozzles.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">July 2003</div>
+    <div class="timeline-title">Summer School – University of Balamand, Lebanon</div>
+    <div class="timeline-desc">
+      Topic: Image processing (theory and DSP implementation).
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">April 2007</div>
+    <div class="timeline-title">Visiting Professor – University of Le Havre</div>
+    <div class="timeline-desc">
+      15-day visit for teaching and research collaboration.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">December 2012 & December 2013</div>
+    <div class="timeline-title">Visiting Professor – ESIGELEC, France</div>
+    <div class="timeline-desc">
+      1-week visit each year for teaching and research.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">March 2014</div>
+    <div class="timeline-title">Visiting Professor – Paris, IFSO</div>
+    <div class="timeline-desc">
+      1-week visit for teaching and research.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">June 2015 & February 2016</div>
+    <div class="timeline-title">Visiting Professor – Paris UPEC</div>
+    <div class="timeline-desc">
+      Research missions and collaboration.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">April 2015</div>
+    <div class="timeline-title">Visiting Professor – University of Lille</div>
+    <div class="timeline-desc">
+      15-day visit for teaching and research.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">May 2016</div>
+    <div class="timeline-title">Visiting Professor – University of Creteil UPEC</div>
+    <div class="timeline-desc">
+      15-day teaching and research visit.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">March 2017</div>
+    <div class="timeline-title">Visiting Professor – University of Nantes</div>
+    <div class="timeline-desc">
+      15-day visit for teaching and research.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">June & December 2021</div>
+    <div class="timeline-title">Visiting Professor – University of Poitiers</div>
+    <div class="timeline-desc">
+      7-day visit each time for teaching and research.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">June & December 2022</div>
+    <div class="timeline-title">Visiting Professor – University of Poitiers</div>
+    <div class="timeline-desc">
+      7-day visit each time for teaching and research.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">October 2022 & February 2023</div>
+    <div class="timeline-title">Visiting Professor – University of Lille</div>
+    <div class="timeline-desc">
+      15-day teaching and research visits.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">November 2022</div>
+    <div class="timeline-title">Visiting Professor – University of Compiègne</div>
+    <div class="timeline-desc">
+      15-day visit focused on teaching and research collaboration.
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-date">May 2023</div>
+    <div class="timeline-title">Visiting Professor – University of Rennes</div>
+    <div class="timeline-desc">
+      15-day teaching and research visit.
+    </div>
+  </div>
+	</details>
+	 <details id="d-admin" open>
+    <summary>Administrative Activities</summary>
+	<div class="role-card">
+      <div class="date">Since January 2009</div>
+      <div class="title">Director</div>
+      <div class="desc">Azm Center for Biotechnology Research and Applications, Lebanese University, Tripoli, Lebanon.</div>
+    </div>
+
+    <div class="role-card">
+      <div class="date">Since September 2009</div>
+      <div class="title">Coordinator of Master 2 R</div>
+      <div class="desc">“Medical and Industrial Systems Technologies”, Faculty of Engineering, Lebanese University.</div>
+    </div>
+
+    <div class="role-card">
+      <div class="date">Since July 2009</div>
+      <div class="title">Member</div>
+      <div class="desc">Scientific Council of the Graduate School of Science and Technology, Lebanese University.</div>
+    </div>
+
+    <div class="role-card">
+      <div class="date">Since January 2014</div>
+      <div class="title">Member</div>
+      <div class="desc">EDST Quality Control Committee and Faculty of Engineering, Lebanese University.</div>
+    </div>
+
+    <div class="role-card">
+      <div class="date">September 2004 – September 2009</div>
+      <div class="title">Director</div>
+      <div class="desc">Biomedical Department, Islamic University of Lebanon.</div>
+    </div>
+
+    <div class="role-card">
+      <div class="date">September 2005 – September 2009</div>
+      <div class="title">Coordinator</div>
+      <div class="desc">Research Master’s Program in collaboration between the Islamic University of Lebanon and the University of Technology of Compiègne.</div>
+    </div>
+
+    <div class="role-card">
+      <div class="date">October 2006 – March 2008</div>
+      <div class="title">Member</div>
+      <div class="desc">LEPAC Technical Committee: "Lebanese Engineering Program Accreditation Committee". Participated in internship at CTI in France (January 2008).</div>
+    </div>
+
+    <div class="role-card">
+      <div class="date">July 2008</div>
+      <div class="title">Member</div>
+      <div class="desc">Technical Committee for the creation of the “National Park of Upper Akkar”. Involved in twinning with Rhône-Alpes region, France.</div>
+    </div>
+
+    <div class="role-card">
+      <div class="date">1997 – 1999</div>
+      <div class="title">Elected Representative</div>
+      <div class="desc">Postgraduate students at the Department of Information and Decision Systems Engineering, UTT (Université de Technologie de Troyes).</div>
+    </div>
+	</details>
+	 <details id="d-social" open>
+    <summary>Social Activities</summary>
+	 <div class="contribution">
+    <div class="contribution-icon">🏛️</div>
+    <div class="contribution-text">2004–2010: Elected member in the municipality of Akkar Atika.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">🏛️</div>
+    <div class="contribution-text">2010–2016: Elected member in the municipality of Akkar Atika.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">🏛️</div>
+    <div class="contribution-text">2016–2019: Elected member in the municipality of Akkar Atika.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">👑</div>
+    <div class="contribution-text">2019–Present: Elected as President of the Municipality of Akkar Atika.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">🎭</div>
+    <div class="contribution-text">Since June 2004: Head of Cultural Activities in Akkar Atika Region.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">🌿</div>
+    <div class="contribution-text">Worked with the MADA Association on environmental and cultural projects in Akkar Atika village.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">📘</div>
+    <div class="contribution-text">Author of the book: <strong>"Guide to Universities in Lebanon"</strong>.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">🎓</div>
+    <div class="contribution-text">Attended 15 orientation conferences for BAC students (twice yearly since 2004).</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">🌲</div>
+    <div class="contribution-text">Member of the technical committee for the creation of the National Park of Haut Akkar.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">📣</div>
+    <div class="contribution-text">Director of cultural formations and responsible for cultural training in Akkar Atika.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">🇫🇷</div>
+    <div class="contribution-text">Participated in training on national park creation in France (Gironde & Carthusian parks) with ministries and MADA.</div>
+  </div>
+
+  <div class="contribution">
+    <div class="contribution-icon">🤝</div>
+    <div class="contribution-text">Active collaboration with many NGOs on cultural and developmental initiatives.</div>
+  </div>
+	</details>
+	 <details id="d-prices" open>
+    <summary>Prices and recognition</summary>
+	 <ul class="timeline">
+      <li>
+        <div class="date">November 2004</div>
+        <div class="description">
+          Participation in the 7th LIRA 2004 (Lebanese Industrial Research Achievement).
+          <ul>
+            <li>🏅 First prize for the best end-of-studies project in the biomedical field: <em>“Realization of a digital Holter system”</em>.</li>
+            <li>🏅 First prize for the best supervising teacher.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div class="date">November 2005</div>
+        <div class="description">
+          Participation in the 8th LIRA 2005 exhibition.
+          <ul>
+            <li>🏅 First prize for the best biomedical project: <em>"ECG signal transmission via GSM telemetry"</em>.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div class="date">November 2013</div>
+        <div class="description">
+          🥇 First Innovation Prize organized by LASER and AUF.
+        </div>
+      </li>
+
+      <li>
+        <div class="date">December 2014</div>
+        <div class="description">
+          🥇 First Innovation and Development Award organized by the Ministry of Industry.
+        </div>
+      </li>
+
+      <li>
+        <div class="date">November 2015</div>
+        <div class="description">
+          🥇 Award of Excellence for Scientific Research in Engineering – Organized by the Lebanese CNRS.
+        </div>
+      </li>
+
+      <li>
+        <div class="date">November 2017</div>
+        <div class="description">
+          🥇 SMLH Prize for the Year 2017.
+        </div>
+      </li>
+    </ul>
+	</details>
+	 <details id="d-other" open>
+    <summary>Other knowledge</summary>
+	<div class="section">
+      <h2>Languages</h2>
+      <ul>
+        <li>French: read, speak, write</li>
+        <li>English: read, spoken, written</li>
+        <li>Arabic: Mother Tongue</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Computer Skills</h2>
+      <div class="skills-columns">
+        <ul>
+          <li>Operating Systems: DOS, Unix, MS-Windows</li>
+          <li>Languages: Borland C++, Visual C, Pascal, Fortran, Lisp, Assembler, HTML, Java</li>
+        </ul>
+        <ul>
+          <li>Scientific Software: Matlab, Labview, Autocad, Pspice, Biobench, Orcad</li>
+          <li>Databases: Dbase, Foxpro</li>
+          <li>Office Software: LaTeX, MS Word, Excel, PowerPoint</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Sports</h2>
+      <ul>
+        <li>Football</li>
+        <li>Swimming</li>
+        <li>Climbing</li>
+        <li>Tennis</li>
+      </ul>
+    </div>
+	</details>
+	 <details id="d-pub" open>
+    <summary>Internatiomal peer reviewed  journal articles</summary>
+	<div class="table-wrapper">
+	
+        <table border="0" >
+ 
+  <tbody>
+     <colgroup>
+            <col style="width: 10%;" />  <!-- Set width for 'Code' column -->
+            <col style="width: 90%;" />  <!-- Set width for 'Rest' column -->
+      </colgroup>
+    <tr>
+      <td>IA1</td>
+      <td>M. KHALIL, J. DUCHENE, C. MARQUE. Detection and isolation of multiple events in non-stationary signals by multiscale decomposition. Application to uterine EMG. Intelligent Engineering systems through artificial neural networks, ASME press, USA, Vol. 7, pp. 691-696, 1997</td>
+    </tr>
+    <tr>
+      <td>IA2</td>
+      <td>M. KHALIL, J. DUCHENE, C. MARQUE. Efficacité de la réallocation pour la caractérisation des bouffées EMG dans le plan temps fréquence ». Innovation et Technologie en Biologie et Médecine, Vol. 19, N°3, pp. 203-211, 1998.</td>
+    </tr>
+    <tr>
+      <td>IA3</td>
+      <td>M. KHALIL, J. DUCHENE. Detection and classification on multiple events in peacewise stationary signals. Comparaison between autoregressive and multiscale approaches ». Signal processing, Vol. 75, N°3, 1999.</td>
+    </tr>
+    <tr>
+      <td>IA4</td>
+      <td>M. KHALIL, J. DUCHENE, C. MARQUE. An autoregressive-based technique for event extraction associated with multiscale classification in non stationary signals. Application to uterine EMG. SESD journal (Smart Engineering System Design), USA, pp. 147-158, juin 2000.</td>
+    </tr>
+    <tr>
+      <td>IA5</td>
+      <td>M. KHALIL, J. DUCHENE. Uterine EMG Analyzing : A dynamic approach for change detection and classification. IEEE Transactions on Biomedical Engineering, vol. 46, N6, pp. 748-756, juin 2000.</td>
+    </tr>
+    <tr>
+      <td>IA6</td>
+      <td>J. DUCHENE, M. KHALIL, D. HEWSON Current advances in Uterine SEMG Processing Methods. Recent Res. Devel. Biomed. Eng., Vol 1, pp 149-170, 2002</td>
+    </tr>
+    <tr>
+      <td>IA7</td>
+      <td>El Falou, W., Duchêne, J., Hewson, D.J., Khalil, M., Grabisch, M., Lino, F.  A segmentation  approach to long duration surface EMG Recordings. Journal of Electromyography and Kinesiology 15: 111-119, 2005.</td>
+    </tr>
+    <tr>
+      <td>IA8</td>
+      <td>Mirna Atieh, Rafic Younes, Mohamad Khalil and Herman Akdag, Classification of the Car Seats by Detecting the Muscular Fatigue in the EMG Signal, International Journal of Computational Cognition, vol.3, no.4, December 2005, pages 48-54.</td>
+    </tr>
+    </tr>
+    <tr>
+      <td>IA9</td>
+      <td>Diab M. O., Marque C., Khalil M. Modeling And Classification For Uterine EMG Signals Using Autoregressive Model. Intelligent Engineering systems through artificial neural networks, ASME press. USA, vol 16. pp. 317-322,  2006.</td>
+    </tr>
+    <tr>
+      <td>IA10</td>
+      <td>CHENDEB M., KHALIL M., and DUCHENE J. Methodology of wavelet packet selection for event detection, Signal processing, vol 86, p. 3826-3841, 2006.</td>
+    </tr>
+    <tr>
+      <td>IA11</td>
+      <td>M. Khalil, O Mustapha, M Diab Time Frequency Analysis and Classification of Long Duration SEMG Signals: Application on Fatigue Detection, invited to be published in Modelling and Simulation journal, ASME press, July 2007, pp.1-10.</td>
+    </tr>
+    <tr>
+      <td>IA12</td>
+      <td>Wassim El Falou, Mohamad Khalil, Jacques Duchêne, David Hewson “Automatic threshold determination for a local approach of change detection in long term signal recordings”. EURASIP Journal on Advances in Signal Processing, pp. 1-10, vol 2007.</td>
+    </tr>
+    <tr>
+      <td>IA13</td>
+      <td>Mohamad O. Diab, Catherine Marque and Mohamad A. Khalil, Classification for Uterine EMG Signals: Comparison Between AR Model and Statistical Classification Method, International Journal of Computational Cognition, vol.5, no.1, March2007, pages 8-14.</td>
+    </tr>
+    
+    <tr>
+      <td>IA14</td>
+      <td>Mohamad Khalil, Khaled Khalil, Faults Identification in Industrial Machines Using Nonparametric Classification Methods. International Journal of Computational Cognition, vol.5, no.4, 2007, pages 21-26.</td>
+    </tr>
+    <tr>
+      <td>IA15</td>
+      <td>Lina El Khansa, Amine Nait-Ali ∗, Mohamad Khalil:  Pre-processing deconvolution based technique for improving the performances of ECG codecs: Comparison to SPIHT. Digital Signal Processing, Elseiver, vol 18, pp 900-906, 2008.</td>
+    </tr>
+    <tr>
+      <td>IA16</td>
+      <td>Diab M. O., Marque C., Khalil M.  An Unsupervised Classification Method Of Uterine Electromyography Signals: Classification For Detection Of The Preterm Deliveries. J. Obstet. Gynaecol. Res. Vol. 35, No. 1: 9–19, February 2009.</td>
+    </tr>
+    <tr>
+      <td>IA17</td>
+      <td>M. AYACHE, M.KHALIL, F.TRANQUART, Neural Network Approach to classify automatically the Placental Tissues Development: MLP and RBFF. ." Intelligent Engineering Systems through Artificial Neural Networks, Volume 18, edited C.H. Dagli et al.  New York: ASME Press, pages 301-307. 2008</td>
+    </tr>
+    <tr>
+      <td>IA18</td>
+      <td>Mustapha O., Khalil M., Hoblos G, Chafouk H., Ziadeh H., Lefebvre D., FAULT DETECTION ALGORITHM USING DCS METHOD COMBINED WITH FILTERS BANK DERIVED FROM THE WAVELET TRANSFORM, Journal of Innovative Computing, Information and Control, Vol. 5, N. 4, April 2009.</td>
+    </tr>
+    <tr>
+      <td>IA19</td>
+      <td>Mohamad Khalil, Marwa Chendeb, Mohamad Diab, Catherine Marque, Jacques Duchene Uterine EMG Analysis: Time-Frequency Based Techniques for Preterm Birth Detection. Advanced biosignal processing book. Chapitre 12, Pages 245-66. Mars 2009.</td>
+    </tr>
+    <tr>
+      <td>IA20</td>
+      <td>Marwa Chendeb, Mohamad Khalil, David Hewson and Jacques Duchêne , Classification of Non Stationary Signals Using Multiscale Decomposition. Journal of Biomedical Science and Engineering, Vol 3, pp 193-199, 2010</td>
+    </tr>
+    <tr>
+      <td>IA21</td>
+      <td>M.AYACHE, M.KHALIL, C.PAILLET, F.PERROTIN, F.TRANQUART : RECOGNITION OF PLACENTAL TISSUES USING NEURAL NETWORK, Journal of Computer Science, 6 (6): 634-640, 2010</td>
+    </tr>
+    <tr>
+      <td>IA22</td>
+      <td>Bassam Moslem, Mohamad KHALIL, Catherine Marque Energy distribution Analysis of the uterine Electromyograhy, Journal of medical and biological engineering, Vol. 6, pp.361-366, 2010.</td>
+    </tr>
+    <tr>
+      <td>IA23</td>
+      <td>Samer Chantaf, Amine Naït-Ali, Patrick Karasinski, Mohamad Khalil, ECG modelling using wavelet networks: application to biometrics. Int. J. Biometrics, Vol. 2, No. 3, 2010</td>
+    </tr>
+    <tr>
+      <td>IA24</td>
+      <td>M. Barakat, D. Lefebvre, M. Khalil, O. Mustapha, F. Druaux, Fault Detection and Diagnosis using Wavelet Decomposition combined with Input-Output Mapping, IJCC journal, 2011</td>
+    </tr>
+    <tr>
+      <td>IA25</td>
+      <td>Barakat M., Lefebvre D., Khalil M., Mustapha O., Druaux F., Self Adaptive growing Neural Network Classifier for Faults Detection and Diagnosis, Elsevier, Nerocomputing journal Arizona, Neurocomputing 74 (2011) 3865–3876</td>
+    </tr>
+    <tr>
+      <td>IA26</td>
+      <td>Sawsan SADEK, Mohamad KHALIL, Sahar MERHEB, Khaled HOUSSEIN, Mohamad SAYED, “Real-Time ECG Transmission from Muti-patient toward multi-physician using wireless communications technologies”, Journal of theoretical and Applied Information Technologies, ISSN : 1992-8645, Vol. 25, No.2, pp. 98-102, March 2011.</td>
+    </tr>
+    <tr>
+      <td>IA27</td>
+      <td>Mohamad AYACHE, Mohamad KHALIL, Francois TRANQUART, Artificial Neural Network for Transfer Function Placental Development: DCT and DWT approach. IJCSI International Journal of Computer Science Issues, Vol. 8, Issue 5, No 3, September 2011</td>
+    </tr>
+    <tr>
+      <td>IA28</td>
+      <td>Dany Merhej, Chaouki Diab, Mohamad Khalil and Rémy Prost, Embedding Prior Knowledge within Compressed Sensing by Neural Networks, IEEE TRANSACTIONS ON NEURAL NETWORKS, VOL. 22, NO. 10, OCTOBER 2011.</td>
+    </tr>
+    <tr>
+      <td>IA29</td>
+      <td>Mostapha Barakat, Dimitri Lefebvre, Mohamad Khalil, Oussama Mustapha, F. Druaux, Parameter Selection Algorithm with Self Adaptive Growing Neural Network Classifier for Diagnosis, International Journal of Machine Learning and Cybernetics, DOI: 10.1007/s13042-012-0089-5 2012.</td>
+    </tr>
+    <tr>
+      <td>IA30</td>
+      <td>D. Merhej, H. Ratiney, C. Diab, M. Khalil, and R. Prost, " Fast multidimensional spectroscopy for sparse spectra,” NMR in Biomedicine, 27 (6), 640-655, (2014)</td>
+    </tr>
+    <tr>
+      <td>IA31</td>
+      <td>D. Alamedine, M. Khalil, and C. Marque, “Parameters extraction and monitoring in uterine EMG signals. Detection of preterm deliveries,” IRBM journal, vol. 34, no. 4–5, pp. 322–325, Nov. 2013.</td>
+    </tr>
+    <tr>
+      <td>IA32</td>
+      <td>Alamedine, M. Khalil, and C. Marque, “Comparison of Different EHG Feature Selection Methods for the Detection of Preterm Labor,” Computational and Mathematical Methods in Medicine, vol. 2013, 2013.</td>
+    </tr>
+    <tr>
+      <td>IA33</td>
+      <td>ALAMEDINE, A. DIAB, C. MUSZYNSKI, B. KARLSSON, M. KHALIL, C. MARQUE, “Selection Algorithm for Parameters to Characterize Uterine EHG Signals for the Detection of Preterm Labor,” Signal Image and Video Processing, 8 (6), 1169-1178, (2014)</td>
+    </tr>
+    <tr>
+      <td>IA34</td>
+      <td>Samar Allouch, Rafic Younes, Sofiane Boudaoud And Mohamad Khalil, Physiological And Biomechanical Approach For Human Finger Movement: Modeling, Simulation And Experimental Validation. Journal of Mechanics in Medicine and Biology,  Vol. 14, No. 3 (2014).</td>
+    </tr>
+    <tr>
+      <td>IA35</td>
+      <td>N Khodor, D Matelot, G Carrault, H Amoud, M Khalil, N Ville, F Carre, A Hernandez, Kernel based support vector machine for the early detection of syncope during head-up tilt test, Physiological measurement, 35 (10), 2119, (2014)</td>
+    </tr>
+    <tr>
+      <td>IA36</td>
+      <td>FA Zakaria, M El Badaoui, M Lamraoui, M Khalil, Fatigue study of ultra-runners: Presentation of a new approach for the separation of GRF signals components, Mechanical Systems and Signal Processing, 49, 86-94, 2015.</td>
+    </tr>
+    <tr>
+      <td>IA37</td>
+      <td>M Hassan, M Shamas, M Khalil, W El Falou, F Wendling, EEGNET: An Open Source Tool for Analyzing and Visualizing M/EEG Connectome, PloS one 10 (9), e013829, 2015.</td>
+    </tr>
+    <tr>
+      <td>IA38</td>
+      <td>J Khoder, R Younes, H Obeid, M Khalil, Dimension Reduction of Hyperspectral Image with Rare Event Preserving, Pattern Recognition and Image Analysis, Springer, 621-629, 2015.</td>
+    </tr>
+    <tr>
+      <td>IA39</td>
+      <td>A Mheich, M Hassan, M Khalil, C Berrou, F Wendling, A new algorithm for spatiotemporal analysis of brain functional connectivity, Journal of neuroscience methods, vol. 242, 77-81, 2015.</td>
+    </tr>
+    <tr>
+      <td>IA40</td>
+      <td>N Khodor, G Carrault, D Matelot, H Amoud, M Khalil, Nathalie Thillaye du Boullay, François Carre, Alfredo Hernández, Early syncope detection during head up tilt test by analyzing interactions between cardio-vascular signals, Digital Signal Processing, vol 49, pp. 86-94, 2016.</td>
+    </tr>
+    <tr>
+      <td>IA41</td>
+      <td>M Dawood, C Cappelle, ME El Najjar, M Khalil, B El Hassan, D Pomorski, Jing Peng, Virtual 3D city model as a priori information source for vehicle localization system, Transportation Research Part C: Emerging Technologies, vol. 63, pp. 1-22, 2016.</td>
+    </tr>
+    <tr>
+      <td>IA42</td>
+      <td>Hassan M, Shamas M, Khalil M, El Falou W, Wendling F. EEGNET: An Open Source Tool for Analyzing and Visualizing M/EEG Connectome. PloS one. 2015 Sep 17;10(9):e0138297.</td>
+    </tr>
+    <tr>
+      <td>IA43</td>
+      <td>Kabbara A, Khalil M, El-Falou W, Eid H, Hassan M. Functional Brain Connectivity as a New Feature for P300 Speller. PloS one. 2016 Jan 11;11(1):e0146282.</td>
+    </tr>
+    <tr>
+      <td>IA44</td>
+      <td>Dawood M, Cappelle C, El Najjar ME, Khalil M, El Hassan B, Pomorski D, Peng J. Virtual 3D city model as a priori information source for vehicle localization system. Transportation Research Part C: Emerging Technologies. 2016 Feb 29;63:1-22.</td>
+    </tr>
+    <tr>
+      <td>IA45</td>
+      <td>Hleiss R, Bitar E, Hassan M, Khalil M. Spatiotemporal Analysis of Visual Evoked Responses Using Dense EEG. World Academy of Science, Engineering and Technology, International Journal of Medical, Health, Biomedical, Bioengineering and Pharmaceutical Engineering. 2016 Sep 1;10(3):160-3.</td>
+    </tr>
+    <tr>
+      <td>IA46</td>
+      <td>Zakaria FA, Maiz S, El Badaoui M, Khalil M. First-and second-order cyclostationary signal separation using morphological component analysis. Digital Signal Processing. 2016 Nov 30;58:134-44.</td>
+    </tr>
+    <tr>
+      <td>IA47</td>
+      <td>M El Ghosh, H Naja, H Abdulrab, M Khalil, Towards a Middle-out Approach for Building Legal Domain Reference Ontology. International Journal of Knowledge Engineering. 2 (3), pp.109:114, 2016.</td>
+    </tr>
+    <tr>
+      <td>IA48</td>
+      <td>M Daher, A Diab, MEBE Najjar, M Khalil, F Charpillet, Elder Tracking and Fall Detection System using Smart Tiles, IEEE Sensors Journal, Vol.PP (99), 2016.</td>
+    </tr>
+    <tr>
+      <td>IA49</td>
+      <td>K Safi, S Mohammed, IM Albertsen, E Delechelle, Y Amirat, M Khalil, JM Gracies, E Hutin, Analysis of Human Balance Control using Empirical Mode Decomposition, Signal, Image, and Video Processing journal, Springer, 2016.</td>
+    </tr>
+    <tr>
+      <td>IA50</td>
+      <td>Mohamad Daher, Ahmad Diab, Maan El Badaoui El Najjar, Mohamad Khalil, François Charpillet, Automatic fall detection system using sensing floors, Int. J. Comput. Inform. Sci, Vol.12, pp.75, Sep. 2016.</td>
+    </tr>
+    <tr>
+      <td>IA51</td>
+      <td>Khaled Safi, Samer Mohammed, Inke Marie Albertsen, Eric Delechelle, Yacine Amirat, Mohamad Khalil, Jean-Michel Gracies, Emilie Hutin, Automatic analysis of human posture equilibrium using empirical mode decomposition, Signal, Image and Video Processing, pp.1-8, 2017.</td>
+    </tr>
+    <tr>
+      <td>IA52</td>
+      <td>A Kabbara, W EL Falou, M Khalil, F Wendling, M Hassan, The dynamic functional core network of the human brain at rest, Scientific Reports, Nature Publishing Group,Vol.7, 2017.</td>
+    </tr>
+    <tr>
+      <td>IA53</td>
+      <td>Khouloud Samrouth, Olivier Deforges, Yi Liu, Mohamad Khalil, Wassim El Falou, Autofocus on Depth of Interest for 3D Image Coding, Journal of Electrical and Computer Engineering, 22/2/2017.</td>
+    </tr>
+    <tr>
+      <td>IA54</td>
+      <td>M El Ghosh, H Naja, H Abdulrab, M Khalil, Towards a Legal Rule-Based System Grounded on the Integration of Criminal Domain Ontology and Rules, Procedia Computer Science 112, 632-642, 2017</td>
+    </tr>
+    <tr>
+      <td>IA55</td>
+      <td>L Mouawad, PA Hervieux, C Dal Cappello, J Pansanel, A Osman, M Khalil, Z El Bitar, Triple differential cross sections for the ionization of formic acid by electron impact, Journal of Physics B: Atomic, Molecular and Optical Physics 50 (21), 2017.</td>
+    </tr>
+    <tr>
+      <td>IA56</td>
+      <td>N Challita, MA Khalil, P Beauseroy, Efficiency and stability of EN-ReliefF, a new method for feature selection, International Journal of Computer Aided Engineering and Technology 10 (3), pp. 320-339, 2018.</td>
+    </tr>
+    <tr>
+      <td>IA57</td>
+      <td>A Kabbara, H Eid, W El Falou, M Khalil, F Wendling, M Hassan, Reduced integration and improved segregation of functional brain networks in Alzheimer’s disease, Journal of neural engineering 15 (2), 026023, 2018.</td>
+    </tr>
+    <tr>
+      <td>IA58</td>
+      <td>M Shamas, P Benquet, I Merlet, M Khalil, W El Falou, A Nica, F Wendling, On the origin of epileptic High Frequency Oscillations observed on clinical electrodes, Clinical Neurophysiology 129 (4), pp. 829-841, 2018.</td>
+    </tr>
+    <tr>
+      <td>IA59</td>
+      <td>Khaled Safi, Samer Mohammed, Ferhat Attal, Yacine Amirat, Latifa Oukhellou, Mohamad Khalil, Jean-Michel Gracies, Emilie Hutin, Automatic Segmentation of Stabilometric Signals Using Hidden Markov Model Regression, IEEE Transactions on Automation Science and Engineering, Vol. 15(2), pp. 545-555, April 2018.</td>
+    </tr>
+    <tr>
+      <td>IA60</td>
+      <td>A Mheich, M Hassan, M Khalil, V Gripon, O Dufor, F Wendling, SimiNet: a Novel Method for Quantifying Brain Network Similarity, IEEE transactions on pattern analysis and machine intelligence, vol. 40 (9), pp.2238-22499, Sep.2018.</td>
+    </tr>
+    <tr>
+      <td>IA61</td>
+      <td>A Daher, G Hoblos, M Khalil, Y Chetouani , Parzen window distribution as new membership function for ANFIS algorithm-Application to a distillation column faults prediction Chemometrics and Intelligent Laboratory Systems 175, pp. 1-12, 2018</td>
+    </tr>
+    <tr>
+      <td>IA62</td>
+      <td>Abdoun, Nabil; El Assad, Safwan; Deforges, Olivier; Assaf, Rima; Khalil, Mohamad; Design and security analysis of two robust keyed hash functions based on chaotic neural networks Journal of Ambient Intelligence and Humanized Computing, 2019</td>
+    </tr>
+    
+    <tr>
+      <td>IA63</td>
+      <td>Mohamad Daher, Joelle Al Hage, Maan El Badaoui El Najjar, Ahmad Diab, Mohamad Khalil, François Charpillet, Toward High Integrity Personal Localization System Based on Informational Formalism, IEEE Transactions on Instrumentation and Measurement, 2019.</td>
+    </tr>
+    <tr>
+      <td>IA64</td>
+      <td>Amer Zaylaa, Ahmad Diab, Mohamad Khalil, Catherine Marque, Automatic Monodimensional EHG Contractions’ Segmentation, International Arab Journal of Information Technology (IAJIT), June 2019.</td>
+    </tr>
+    <tr>
+      <td>IA65</td>
+      <td>Saeed Zahran, Ahmad Diab, Rasheda Arman Chowdhury, Tanguy Hedrich, Mahmoud Hassan, Christophe Grova, Maxime Yochum, Mohamad Khalil, Catherine Marque, Performance of source imaging techniques of spatially extended generators of uterine activity, Informatics in Medicine Unlocked, Elsevier, September 2019.</td>
+    </tr>
+    <tr>
+      <td>IA66</td>
+      <td>Aya Kabbara, Mohamad Khalil, Georges O’Neill, Kathy Dujardin, Youssof El Traboulsi, Fabrice Wendling, Mahmoud Hassan, Detecting modular brain states in rest and task, Network Neuroscience 3 (3), pp. 878-901, July 2019.</td>
+    </tr>
+    <tr>
+      <td>IA67</td>
+      <td> Dalia Battikh, Safwan El Assad, Thang Manh Hoang, Bassem Bakhache, Olivier Deforges, Mohamad Khalil, Comparative Study of Three Steganographic Methods Using a Chaotic System and Their Universal Steganalysis Based on Three Feature Vectors, Entropy 21(8), pp. 748, August 2019.</td>
+    </tr>
+    <tr>
+      <td>IA68</td>
+      <td> Charafeddine, J., Pradon, D., Alfayad, S., Chevallier, S. and Khalil, M., Toward bio-kinematic for secure use of rehabilitation exoskeleton, Computer Methods in Biomechanics and Biomedical Engineering, 22(sup1), pp.S424-S426. October 2019.</td>
+    </tr>
+    <tr>
+      <td>IA69</td>
+      <td>Charafeddine, Jinan, Sylvain Chevallier, Samer Alfayad, Mohamad Khalil, and Dider Pradon, Biokinematic Control Strategy for Rehabilitation Exoskeleton Based on User Intention, International Journal of Modeling and Optimization, 9 (6), Decmber 2019.</td>
+    </tr>
+    <tr>
+      <td>IA70</td>
+      <td>IA 70 Alaa Daher, Ghaleb Hoblos, Mohamad Khalil, and Yahya Chetouani, New prognosis approach for preventive and predictive maintenance—Application to a distillation column, Chemical Engineering Research and Design, 153 (2020), pp. 162-174, Janaury 2020.</td>
+    </tr>
+    <tr>
+      <td>IA71</td>
+      <td> Daher, Alaa, Ghaleb Hoblos, Mohamad Khalil, and Yahya Chetouani. "New prognosis approach for preventive and predictive maintenance—Application to a distillation column." Chemical Engineering Research and Design 153 (2020): 162-174.</td>
+    </tr>
+    <tr>
+      <td>IA72</td>
+      <td> Allouch, Sahar, Maxime Yochum, Aya Kabbara, Joan Duprez, Mohamad Khalil, Fabrice Wendling, Mahmoud Hassan, and Julien Modolo. "Mean-field modeling of brain-scale dynamics for the evaluation of EEG source-space networks." bioRxiv (2020).</td>
+    </tr>
+    <tr>
+      <td>IA73</td>
+      <td> Abdoun, Nabil, Safwan El Assad, Olivier Deforges, Rima Assaf, and Mohamad Khalil. "Design and security analysis of two robust keyed hash functions based on chaotic neural networks." Journal of Ambient Intelligence and Humanized Computing 11, no. 5 (2020): 2137-2161.</td>
+    </tr>
+    <tr>
+      <td>IA74</td>
+      <td>Abdoun, Nabil, Safwan El Assad, Thang Manh Hoang, Olivier Deforges, Rima Assaf, and Mohamad Khalil. "Designing Two Secure Keyed Hash Functions Based on Sponge Construction and the Chaotic Neural Network." Entropy 22, no. 9 (2020): 1012.</td>
+    </tr>
+    <tr>
+      <td>IA75</td>
+      <td>R. Mallat, V. Bonnet, M. A. Khalil and S. Mohammed, "Upper Limbs Kinematics Estimation Using Affordable Visual-Inertial Sensors," in IEEE Transactions on Automation Science and Engineering, doi: 10.1109/TASE.2020.3024033.</td>
+    </tr>
+    <tr>
+      <td>IA76</td>
+      <td>Alnazer, I., Bourdon, P., Urruty, T., Falou, O., Khalil, M., Shahin, A., & Fernandez-Maloigne, C. (2021). Recent Advances in Medical Image Processing for the Evaluation of Chronic Kidney Disease. Medical Image Analysis, 101960.</td>
+    </tr>
+    <tr>
+      <td>IA77</td>
+      <td>IA 77 El Saj, R., Sedgh Gooya, E., Alfalou, A., & Khalil, M. (2021). Privacy-Preserving Deep Neural Network Methods: Computational and Perceptual Methods—An Overview. Electronics, 10(11), 1367.</td>
+    </tr>
+    <tr>
+      <td>IA78</td>
+      <td> Tabbal, J., Kabbara, A., Khalil, M., Benquet, P., & Hassan, M. (2021). Dynamics of task-related electrophysiological networks: a benchmarking study. NeuroImage, 231, 117829.</td>
+    </tr>
+    <tr>
+      <td>IA79</td>
+      <td>Mallat, R., Bonnet, V., Dumas, R., Adjel, M., Venture, G., Khalil, M., & Mohammed, S. (2021). Sparse Visual-Inertial Measurement Units Placement for Gait Kinematics Assessment. IEEE Transactions on Neural Systems and Rehabilitation Engineering, 29, 1300-1311.</td>
+    </tr>
+    <tr>
+      <td>IA80</td>
+      <td>Kabbara, A., Robert, G., Khalil, M., Verin, M., Benquet, P., & Hassan, M. (2021). An Electroencephalography connectome predictive model of major depressive disorder severity. arXiv preprint arXiv:2108.11064.</td>
+    </tr>
+    <tr>
+      <td>IA81</td>
+      <td>Eldawlatly, S., Abouelhoda, M., Al-Kadi, O. S., Gojobori, T., Jankovic, B., Khalil, M., ... & Morsy, A. (2021). Biomedical computing in the Arab world: unlocking the potential of a growing research community. Communications of the ACM, 64(4), 108-113.</td>
+    </tr>
+    <tr>
+      <td>IA82</td>
+      <td>Abdoun, Nabil and El Assad, Safwan and Manh Hoang, Thang and Deforges, Olivier and Assaf, Rima and Khalil, Mohamad, Authenticated Encryption Based on Chaotic Neural Networks and Duplex Construction, Journal Symmetry,V13, N12, Page 2432, 2021</td>
+    </tr>
+    <tr>
+      <td>IA83</td>
+      <td> Allouch, Sahar and Yochum, Maxime and Kabbara, Aya and Duprez, Joan and Khalil, Mohamad and Wendling, Fabrice and Hassan, Mahmoud and Modolo, Julien Mean-field Modeling of brain-scale dynamics for the evaluation of EEG source-space networks,  Journal of Brain Topography, V35, N1,p 54--65, 2022,</td>
+    </tr>
+    <tr>
+      <td>IA84</td>
+      <td>Kabbara, Aya and Robert, Gabriel and Khalil, Mohamad and Verin, Marc and Benquet, Pascal and Hassan, Mahmoud, An electroencephalography connectome predictive model of major depressive disorder severity, Scientific reports V12, N1, P1—14, 2022,</td>
+    </tr>
+    <tr>
+      <td>IA84</td>
+      <td>El Dine, K. B., Nader, N., Khalil, M., & Marque, C. (2021). Uterine Synchronization Analysis During Pregnancy and Labor Using Graph Theory, Classification Based on Neural Network and Deep Learning.  IRBM, V=43, N5, P 333—339, 2022</td>
+    </tr>
+    <tr>
+      <td>IA85</td>
+      <td>Tabbal, Judie and Kabbara, Aya and Yochum, Maxime and Khalil, Mohamad and Hassan, Mahmoud and Benquet, Pascal Assessing HD-EEG functional connectivity states using a human brain computational model, Journal of Neural Engineering, 2022,</td>
+    </tr>
+    <tr>
+      <td>IA86</td>
+      <td>Allouch, Sahar and Kabbara, Aya and Duprez, Joan and Khalil, Mohamad and Modolo, Julien and Hassan, Mahmoud, Effect of channel density, inverse solutions and connectivity measures on EEG resting-state networks: a simulation study, Journal of bioRxiv, 2022,  Cold Spring Harbor Laboratory, doi: https://doi.org/10.1101/2022.06.01.494301</td>
+    </tr>
+    <tr>
+      <td>IA87</td>
+      <td>Alnazer, Israa and Falou, Omar and Bourdon, Pascal and Urruty, Thierry and Guillevin, Remy and Khalil, Mohamad and Shahin, Ahmad and Fernandez-Maloigne, Christine, Journal of Medical Imaging,V9, N5, P 054501, 2022</td>
+    </tr>
+    <tr>
+      <td>IA88</td>
+      <td>Berro, Soumaya and ines, douania and Diab, Ahmad and Hajj-Hassan, Mohamad and Khalil, Mohamad and Boudaoud, Sofiane, Curve Fitting Based Minimum Norm Estimation (CFB-MNE) for Motor Unit Spatial Localization Using High Density Surface Electromyogram Signals (2022). SSRN: http://dx.doi.org/10.2139/ssrn.4247844</td>
+    </tr>
+    <tr>
+      <td>IA89</td>
+      <td>M Lamraoui, F Zakaria, ME Badaoui, M Khalil, New Model to Characterize the Cyclostationarity of Walking and Running Biomechanical Signals, Recent Trends in Wave Mechanics and Vibrations: Proceedings of WMVC 2022</td>
+    </tr>
+    <tr>
+      <td>IA90</td>
+      <td>Mouna Benchekroun, Baptiste Chevallier, Hamza Beaouiss, Dan Istrate, Vincent Zalc, Mohamad Khalil, Dominique Lenn, Comparison of Stress Detection through ECG and PPG signals using a Random Forest-based Algorithm, 2022 44th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)</td>
+    </tr>
+    <tr>
+      <td>IA91</td>
+      <td>S Allouch, J Duprez, M Khalil, M Hassan, J Modolo, A Kabbara,  Methods Used to Estimate EEG Source-Space Networks: A Comparative Simulation-Based Study. 2022 44th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)</td>
+    </tr>
+    <tr>
+      <td>IA92</td>
+      <td>Allouch, Sahar and Kabbara, Aya and Duprez, Joan and Khalil, Mohamad and Modolo, Julien and Hassan, Mahmoud, Effect of channel density, inverse solutions and connectivity measures on EEG resting-state networks: a simulation study, NeuroImage, Volume 271,  May 2023, https://www.sciencedirect.com/science/article/pii/S1053811923001520</td>
+    </tr>
+    <tr>
+      <td>IA93</td>
+      <td>R El Saj, ES Gooya, A Alfalou, M Khalil, Face recognition and access control applications of the generative classifier pix2pix, Pattern Recognition and Tracking XXXIV 12527, 60-66</td>
+    </tr>
+    <tr>
+      <td>IA94</td>
+      <td>R El Saj, ES Gooya, A Alfalou, M Khalil, Generative classifier pix2pix, Pattern Recognition and Tracking XXXIV 12527, 85-92</td>
+    </tr>
+    <tr>
+      <td>IA95</td>
+      <td>S Berro, I Douania, A Diab, M Hajj-Hassan, M Khalil, S Boudaoud,  Curve Fitting Based Minimum Norm Estimation (CFB-MNE) for motor unit spatial localization using high density surface electromyogram signals, Biomedical Signal Processing and Control 86, 105258</td>
+    </tr>
+    <tr>
+      <td>IA96</td>
+      <td>N Abdoun, S El Assad, TM Hoang, O Deforges, R Assaf, M Khalil, Secure and resilient authenticated encryption approach based on chaotic neural networks and duplex construction,  Advances and Challenges in Science and Technology Vol. 6, 146-191</td>
+    </tr>
+    <tr>
+      <td>IA97</td>
+      <td>Kamil Bader El Dine, Noujoud Nader, Mohamad Khalil, Catherine Marque   Optimizing Uterine Synchronization Analysis in Pregnancy and Labor through Window Selection and Node Optimization, 2024/2,  arXiv: 2402.14827.</td>
+    </tr>
+    <tr>
+      <td>IA98</td>
+      <td>Dine, Kamil Bader El; Nader, Noujoud; Khalil, Mohamad; Marque, Catherine; \tElectrical and Mechanical Modeling of Uterine Contractions Analysis Using Connectivity Methods and Graph Theory\tarXiv preprint arXiv:2501.10544\t, 2025</td>
+    </tr>
+    <tr>
+      <td>IA99</td>
+      <td>Saadoon, Yousif A; Khalil, Mohamad; Battikh, Dalia; \tPredicting Epileptic Seizures Using EfficientNet-B0 and SVMs: A Deep Learning Methodology for EEG Analysis\tBioengineering. 12, 2, 109, 2025</td>
+    </tr>
+    <tr>
+      <td>IA00</td>
+      <td>El Ghosh, Mirna; Naja, Hala; Abdulrab, Habib; Khalil, Mohamad; CriMOnto: A generalized domain-specific ontology for modeling procedural norms of the Lebanese criminal law, Data & Knowledge Engineering, 158, 102419, 2025, North-Holland</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+	</details>
+	<details id="d-pubnational" open>
+    <summary>National journal articles</summary>
+	<div class="table-wrapper">
+	
+        <table border="0" >
+   <colgroup>
+            <col style="width: 10%;" />  <!-- Set width for 'Code' column -->
+            <col style="width: 90%;" />  <!-- Set width for 'Rest' column -->
+      </colgroup>
+  <tbody>
+    <tr>
+      <td>NA1</td>
+      <td>M. KHALIL, H. ZIADE, J. DUCHENE, C. MARQUE et al. Extraction des types d’événements dans les signaux biomédicaux. Application à l’EMG utérin. Lebanese Science Journal, Vol 2, N 1, pp 121-138 - juillet 2001.</td>
+    </tr>
+    <tr>
+      <td>NA2</td>
+      <td>W. ELFALOU, M. KHALIL, J. DUCHENE, M. MAKSOUD. Segmentation des signaux EMG longs durée- Application à l’étude de l’inconfort, Lebanese scientific journal, Juillet 2003, pp</td>
+    </tr>
+    <tr>
+      <td>NA3</td>
+      <td>M Diab, M. Khalil, C. Marque, “Une approche de classification des contraction utérines basée sur la théorie des ondelettes et statistiques” . Lebanese scientific jounal, Vol. 7, N0 1, pp. 91-103, 2006.</td>
+    </tr>
+    <tr>
+      <td>NA4</td>
+      <td>M. AYACHE, M.KHALIL, C.PAILLET, F.PERROTIN, F.TRANQUART A Neural Network Approach for Classification of Placental Tissues Using Discrete Wavelet Transform. Lebanese Science Journal, Vol.10, N02, 2009, pages 49-58.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+	</details>
+	<details id="d-conf" open>
+    <summary>Peer reviewed conferences</summary>
+	<div class="table-wrapper">
+	
+        <table border="0" >
+		 <colgroup>
+            <col style="width: 10%;" />  <!-- Set width for 'Code' column -->
+            <col style="width: 90%;" />  <!-- Set width for 'Rest' column -->
+      </colgroup>
+  
+  <tbody>
+    <tr>
+      <td>CA1</td>
+      <td>M. KHALIL, J. DUCHENE, C. MARQUE. Détection et classification en représentation multidimensionnelle. Application sur l’EMG uterin. Proc. Seizième Colloque GRETSI sur le traitement du signal et des d’Images, GRETSI’97, Grenoble - France, pp.331-334, 1997</td>
+    </tr>
+    <tr>
+      <td>CA2</td>
+      <td>M. KHALIL, J. DUCHENE, C. MARQUE. Reassignment method in time-scale representation. Application to uterine electromyography. World Congress  on Medical Physics and Biomedical Engineering, Nice - France, pp. 557, 17 sept 1997.</td>
+    </tr>
+    <tr>
+      <td>CA3</td>
+      <td>M.  KHALIL, J. DUCHENE, C. MARQUE, H. LEMAN . Detection and classification in uterine electromyography by multiscale representation. Proc. Of  IEEE-EMBS, Chicago, USA,  pp. 1606-1608, 1997.</td>
+    </tr>
+    <tr>
+      <td>CA4</td>
+      <td>M. KHALIL, J. DUCHENE, C. MARQUE. Generalized algorithm of detection and classification in uterine EMG. Proc. of IEEE-EMBS, Hong Kong (ROC),  pp. 2658-2661, 1998.</td>
+    </tr>
+    <tr>
+      <td>CA5</td>
+      <td>M. KHALIL, J. DUCHENE. Une approche pour la détection fondée sur une somme cumulée dynamique associée à une décomposition multiéchelle. Application à l’EMG utérin. Dix-septième colloque GRETSI sur le Traitement du signal et des Images- GRETSI’99, Vannes, France, septembre 1999.</td>
+    </tr>
+    <tr>
+      <td>CA6</td>
+      <td>M. KHALIL, J. DUCHENE, C. MARQUE. Uterine EMG Processing : Event extraction and classification. European Medical  biological engineering conference (EMBEC’99), Vienna, November 1999.</td>
+    </tr>
+    <tr>
+      <td>CA7</td>
+      <td>M. KHALIL, J. DUCHENE, C. MARQUE. Uterine EMG Processing : Dynamic detection associated with multiscale classification of events. IEEE-EMBS, Atlanta, USA, octobre 1999.</td>
+    </tr>
+    <tr>
+      <td>CA8</td>
+      <td>M. KHALIL, J. DUCHENE, C . MARQUE  Détection et classification d'évènements dans l'EMG utérin par décomposition en ondelettes. 9ème forum des jeunes chercheurs en Biomédical. Brest-France, pp.152-153, 1998.</td>
+    </tr>
+    <tr>
+      <td>CA9</td>
+      <td>M. KHALIL, H. ZIADE, J. DUCHENE, C. MARQUE. Une méthode généralisée de détection et de classification dans les signaux non stationnaires. Application à l’EMG utérin.  Premier colloque libano-syrien d’ingénierie- Damas-Syrie, 13-14 octobre 1999.</td>
+    </tr>
+    <tr>
+      <td>CA10</td>
+      <td>M. KHALIL, J. DUCHENE. Dynamic approach of detection associated with wavelet decomposition, ISPACS 2000, Honolulu, Nov. 2000.</td>
+    </tr>
+    <tr>
+      <td>CA11</td>
+      <td>W. FALOU, M. KHALIL, J. DUCHENE AR-based method for change detection using dynamic cumulative sum, IEEE transactions on electronics and systems, Beirut-Lebanon, December 2001.</td>
+    </tr>
+    <tr>
+      <td>CA12</td>
+      <td>W. FALOU, M. KHALIL, J. DUCHENE.  Méthode avancée pour la détection dans les signaux médicaux. Application à l'ergonomie. GRETSI, septembre 2001- Grenoble- France</td>
+    </tr>
+    <tr>
+      <td>CA13</td>
+      <td>W. FALOU, J. DUCHENE, M. KHALIL , Adaptive approach for SEMG change detection. 23rd Annual International Conference of the IEEE Engineering in Medecine and Biology Society, EMBC2001. Istambul – Turkey October 2001.</td>
+    </tr>
+    <tr>
+      <td>CA14</td>
+      <td>W. FALOU, J.  DUCHENE, M. KHALIL, D. HEWSON. Change detection and classification in long term Postural EMG recordings. The 4th International Workshop On Biosignal Interpretaion. Como- Italy June 2002.</td>
+    </tr>
+    <tr>
+      <td>CA15</td>
+      <td>Diab, Mohamad O.; Marque, Catherine; Khalil, Mohamad, An Unsupervised Classification Method of Uterine Electromyography Signals Using Wavlet Decomposition, Proceedings of the 26th Annual International Conference of the IEEE EMBS San Francisco, CA, USA, September 1-5, 2004, p: 192-195.</td>
+    </tr>
+    <tr>
+      <td>CA16</td>
+      <td>M.O. Diab, C. Marque, M. Khalil, UTERINE ELECTROMYOGRAPHY SIGNALS: Classification and Interpretation. Proceedings of the 2nd Cairo International Biomedical Engineering Conference (CIBEC, IEEE EMBS), Cairo, Egypt. December 27-28, 2004, p: 1-4.</td>
+    </tr>
+    <tr>
+      <td>CA17</td>
+      <td>Wassim El Falou, Oussama Mustapha, Mohamad Khalil,  Marwa Chendeb, Jacques Duchêne. Computer Analysis of Long Duration SEMG Signals During Simulated Car Driving: Two Different Approaches., Proceedings of ICTTA’04 International Conference on Information & Communication Technologies: From Theory to Application, with IEEE, SYRIA. 19-23 April 2004- pp 383- 384</td>
+    </tr>
+    <tr>
+      <td>CA18</td>
+      <td>Mohamad Khalil; Oussama Mustapha; Mohamad Diab. Time Frequency Analysis And Classification Of Long Duration SEMG Signals: Application On Fatigue Detection, MS05, June 2005</td>
+    </tr>
+    <tr>
+      <td>CA19</td>
+      <td>M. Atieh, R. Younès, M. Khalil, N. Matta et H. Akda: Identification des segments EMG par Data Mining et Statistiques. ISTIT 2005, Tunisie</td>
+    </tr>
+    <tr>
+      <td>CA20</td>
+      <td>M. Chendeb, M. Khalil and J. Duchêne, “Wavelet Based Method for Detection: Application in Proprioceptive Rehabilitation”, Proc. 26th Annual Interna. Conf. of the IEEE Engineering in Medicine and Biology Society, San Francisco, CA, USA, 1-5 September 2004, pp. 161-164.</td>
+    </tr>
+    <tr>
+      <td>CA21</td>
+      <td>Chendeb M., Khalil M., Duchêne J.,\t"Wavelet-based method for detection of events in long duration signals", 5th EUROSIM Congress on Modeling and Simulation,  ESIEE Paris, Marne la Vallée, France, 6-10 September 2004.</td>
+    </tr>
+    <tr>
+      <td>CA22</td>
+      <td>Chendeb M., Khalil M., Duchêne J.,\t"New Approach for Detection using Wavelet Coefficients", ICITA’2005 3rd International conference on Information Technology and Applications, Sydney, Australie, 4-7 July 2005.</td>
+    </tr>
+    <tr>
+      <td>CA23</td>
+      <td>Chendeb M., Khalil M., Duchêne J.,\t"The use of wavelet packets for event detection", 13th European Signal Conference EUSIPCO, Antalya Turkey, 4-8 September 2005.</td>
+    </tr>
+    <tr>
+      <td>CA24</td>
+      <td>Chendeb M., Khalil M., Duchêne J., "The use of wavelet packets for detection and identification of events in uterine EMG", 3rd European Medical & biological engineering conference, IFMBE European conference on biomedical engineering, Prague, Czech republic, 20 -25 November 2005.</td>
+    </tr>
+    <tr>
+      <td>CA25</td>
+      <td>Diab, Mohamad O.; Marque, Catherine; Khalil, Mohamad, Unsupervised Classification in Uterine Electromyography Signal: Toward The Detection of Preterm Birth. 27th Annual International Conference of the IEEE EMBS Shanghai, Chine, 4-8 September 2005.</td>
+    </tr>
+    <tr>
+      <td>CA26</td>
+      <td>Oussama Mustapha, Mohamad Khalil, Ghaleb Hoblos, Houcine Chafouk, Haissam Ziadeh,  Dimitri Lefebvre. One Line fault detection by using Filters Bank and Artificial Neural Networks. Proceedings of ICTTA’06 International Conference on Information & Communication Technologies: From Theory to Application, with IEEE, SYRIA. 24-28 April 2006- pp 589-590.</td>
+    </tr>
+    <tr>
+      <td>CA27</td>
+      <td>M. Ayache, M. Khalil, C. Paillet, F. Perrotin, F. Tranquart: Quantification of placenta vascularization by two dimensional Power Doppler. Proceedings of ICTTA’06 International Conference on Information & Communication Technologies: From Theory to Application, with IEEE, SYRIA. 24-28 April 2006- pp 401-402.</td>
+    </tr>
+    <tr>
+      <td>CA28</td>
+      <td>Mustapha O., Khalil M., Hoblos G, Chafouk H., Ziadeh H., Lefebvre D., About the Detectability of DCS Algorithm Combined with Filters Bank, Qualita 2007, Tanger, Maroc, 2007.</td>
+    </tr>
+    <tr>
+      <td>CA29</td>
+      <td>O.Mustapha, M.Khalil, G.Hoblos, H.Chafouk, H.Ziadeh, D.Lefebvre, ON-LINE CHANGE DETECTION BY USING FILTERS BANK/WAVELET TRANSFORM AND DYNAMIC CUMULATIVE SUM METHOD, 4th FAI International Conference, Lefke, Cyprus, December 2006.</td>
+    </tr>
+    <tr>
+      <td>CA30</td>
+      <td>Mustapha O., Khalil M., Hoblos G, Chafouk H., Lefebvre D., FAULT DETECTION ALGORITHM USING DCS METHOD COMBINED WITH FILTERS BANK DERIVED FROM THE WAVELET TRANSFORM, 4th International Conference on Informatics in Control, Automation and Robotics (ICINCO 2007), 9-12 mai, 2007, Angers, France.</td>
+    </tr>
+    <tr>
+      <td>CA31</td>
+      <td>Mustapha O., Khalil M., Hoblos G, Chafouk H., Lefebvre D., FAULT DETECTION BY MEANS OF DCS ALGORITHM COMBINED WITH FILTERS BANK:APPLICATION TO THE TENNESSEE EASTMAN CHALLENGE PROCESS', Article soumis à: 5th International Conference on Informatics in Control, Automation and Robotics (ICINCO 2008), 11-15 mai, 2008, Funchal, Madeira, Potugal.</td>
+    </tr>
+    <tr>
+      <td>CA32</td>
+      <td>M. AYACHE, M.KHALIL,C.PAILLET,F.PERROTIN,F.TRANQUAR Discrete Wavelet Transform Based on Supervised Training for Classification of  Placental tissues. First International Conference of E-Medical systems, October   24-26 Morocco Fez, pages 188-192, 2006</td>
+    </tr>
+    <tr>
+      <td>CA33</td>
+      <td>M.AYACHE, M.KHALIL, C.PAILLET,F.PERROTIN,F.TRANQUART Quantification of Placental Vascularization by Two-Dimensional Power Doppler. IEEE Proceeding 2006 Volume 1 pages 1140-1144. 2007.</td>
+    </tr>
+    <tr>
+      <td>CA34</td>
+      <td>O.Mustapha, M.Khalil, G.Hoblos, H.Chafouk, D.Lefebvre, AMELIORATION DE LA DETECTION DES DEFAUTS PAR FILTRAGE A BASE D'ONDELETTES, Article soumis à CIFA 2008 à Bucarest Roumanie 3-6 septembre 2008</td>
+    </tr>
+    <tr>
+      <td>CA35</td>
+      <td>O.Mustapha, M.Khalil, G.Hoblos, H.Chafouk, D.Lefebvre, FILTERS BANK DERIVED FROM THE WAVELET TRANSFORM FOR REAL TIME CHANGE DETECTION IN SIGNAL , article accepté pour la conférence: The 3rd International Conference on Information & Communication Technologies : from Theory to Application-IEEE-ICTTA’08 à Damas 7-11 2008 Avril, 2008.</td>
+    </tr>
+    <tr>
+      <td>CA36</td>
+      <td>Mohamad Khalil; Oussama Mustapha; Dimitri Lefebvre, Marwa Chendeb. Abrupt change detection algorithm: from theory to implementation. Colloque Evaluation des performances et maîtrise desrisques technologiques pour les systèmes industriels et énergétiques » Le Havre, 28-28  Mai 2009, France,</td>
+    </tr>
+    <tr>
+      <td>CA37</td>
+      <td>M.AYACHE,M.KHALIL,C.PAILLET,F.PERROTIN,F.TRANQUAR RECOGNITION OF PLACENTAL TISSUES USING NEURAL NETWORK, 5TH International Arab Conference on Information Technology, Sana'a, 15-17 December, 2009, page 74-80</td>
+    </tr>
+    <tr>
+      <td>CA38</td>
+      <td>Barakat M., Lefebvre D., Khalil M., Mustapha O., Druaux F., FDD Using Wavelet Decomposition Combined with Parameters Elimination Method and Radial Basis Function Network, LAAS16, Beirut, Lebanon, 2009.</td>
+    </tr>
+    <tr>
+      <td>CA39</td>
+      <td>Moslem B., Hassan M., Khalil M., Marque C., Diab M.O., “Monitoring the progress of pregnancy and detecting labor using uterine electromyography”, 2009 International Symposium on Bioelectronics and Bioinformatics, pp. 160-163, 2009.</td>
+    </tr>
+    <tr>
+      <td>CA40</td>
+      <td>Barakat M., Lefebvre D., Khalil M., Mustapha O., Druaux F., Input – Output Classification Mapping for the Fault Detection, Identification and Accommodation, to appear in Proc. IEEE-SMC, Istanbul, Turkey, 2010.</td>
+    </tr>
+    <tr>
+      <td>CA41</td>
+      <td>Barakat M., Lefebvre D., Khalil M., Mustapha O., Druaux F., FDI Based on Wavelet Decomposition Combined With Parameters Selection and RBF Networks : Application to the Diagnosis of TECP Reactor, Proc. IEEE-MED, Invited session ‘Diagnosis and Environmental issues », pp. 1352 - 1357, Marrakech, Marocco, 2010.</td>
+    </tr>
+    <tr>
+      <td>CA42</td>
+      <td>Barakat M., Lefebvre D., Khalil M., Mustapha O., Druaux F., BSP-BDT Classification Technique: Application to Rolling Elements Bearing, Conference on Control and Fault Tolerant Systems, “sys-Tol”, Nice, France, 2010.</td>
+    </tr>
+    <tr>
+      <td>CA43</td>
+      <td>Moslem B., Khalil M., Marque C., Diab M.O., “Detrended fluctuation analysis of uterine electromyography”, First Middle East conference on biomedical engineering, pp. 450-453, February 2010,</td>
+    </tr>
+    <tr>
+      <td>CA44</td>
+      <td>Moslem B., Khalil M., Marque C., Diab M.O., “Complexity analysis of the uterine electromyography”, Proc. of Conf. IEEE EMBS, pp. 2802 – 2805, 2010</td>
+    </tr>
+    <tr>
+      <td>CA45</td>
+      <td>Bassam Moslem, Mohamad Khalil, Catherine Marque, Mohamad O. Diab: “A Wavelet Packet-based Energetic Approach for the Analysis of the Uterine EMG”,ISSNIP Biosignals and Biorobotics Conference, pp. 98-102, 2010.</td>
+    </tr>
+    <tr>
+      <td>CA46</td>
+      <td>Dany Merhej, Hélène Ratiney, Chaouki Diab, Mohamad Khalil and Rémy Prost,   Undersampled MRSI k-space for spectra with limited support»,  accepted at the International Society for Magnetic Resonance conference, ISMRM 2011, #2854.</td>
+    </tr>
+    <tr>
+      <td>CA47</td>
+      <td>Bassam Moslem, M. KHALIL, Multichannel Fusion for the Classification of Uterine EMG Signals, Proceedings of the 10th FEA student conference, pp. 273-278, May 18&19, 2011 .</td>
+    </tr>
+    <tr>
+      <td>CA48</td>
+      <td>Maya Dawood, Cindy Cappelle, Maan El Badaoui El Najjar, mohamad khalil, Denis Pomorski Vehicle Geo-Localization Based on IMM-UKF Data Fusion Using a GPS Receiver, a Video Camera, and a 3D City Model. June 2011, Intelligent Vehicles Symposium, Germany</td>
+    </tr>
+    <tr>
+      <td>CA49</td>
+      <td>Moslem B., Diab M.O., Khalil M., Marque C., “Classification of multichannel uterine EMG signals”, Conf. IEEE EMBS, Boston, USA, 4-7 September, 2011.</td>
+    </tr>
+    <tr>
+      <td>CA50</td>
+      <td>Moslem B., Karlsson, B., Diab M.O., Khalil M., Marque C., “Classification performance of frequency-related parameters derived from uterine EMG signals”,Conf. IEEE EMBS, Boston, USA, 2011. 4,7 September 2011</td>
+    </tr>
+    <tr>
+      <td>CA51</td>
+      <td>Bassam MOSLEM, Mohamad, O. DIAB, Mohamad KHALIL, Catherine MARQUE, “Analyse des signaux EMG utérin pour le suivi de grossesse et la détection de l’accouchement”, International Conference on Advances Biomedical Engineering, Lebanon, 2011,</td>
+    </tr>
+    <tr>
+      <td>CA52</td>
+      <td>Barakat M., Druaux F., Lefebvre D., Khalil M., Mustapha O., Intelligent condition monitoring of rotary machine by mean of self adaptive growing neural network, IEEE-MED, Greece, 2011.</td>
+    </tr>
+    <tr>
+      <td>CA53</td>
+      <td>Dany Merhej, Hélène Ratiney, Chaouki Diab, Mohamad Khalil and Rémy Prost, « Undersampling for fast multidimensional spectroscopy with sparse frequency domain»,submitted to the European Society for Magnetic Resonnance in Medicine and Biology congress, ESMRMB 2011.</td>
+    </tr>
+   
+    <tr>
+      <td>CA54</td>
+      <td>Bassam MOSLEM, Mohamad, O. DIAB, Mohamad KHALIL, Catherine MARQUE, “Classification of Multichannel Uterine EMG signals Using Unsupervised Competitive Learning”, IEEE Workshop on Signal Processing Systems, Lebanon, pp. 267-272, Oct 2011.</td>
+    </tr>
+    <tr>
+      <td>CA55</td>
+      <td>Bassam Moslem, Mohamad O. Diab, Mohamad Khalil, Catherine Marque, “Monitoring pregnancy using uterine Electromyography”, 17th International Scientific Conference, LAAS, November 12,13, 2010</td>
+    </tr>
+    <tr>
+      <td>CA56</td>
+      <td>Bassam MOSLEM, Aly Chkeir, Mohamad, O. DIAB, Mohamad KHALIL, Catherine MARQUE, A Multisensor Data Fusion Approach for Improving the Classification Accuracy of Uterine EMG Signals, IEEE International Conference on Electronics, Circuits and Systems (ICECS), Lebanon, Dec 11-14 2011.</td>
+    </tr>
+    <tr>
+      <td>CA57</td>
+      <td>Bassam MOSLEM, Aly Chkeir, Mohamad, O. DIAB, Mohamad KHALIL, Catherine MARQUE, Combining Multiple Support Vector Machines for Boosting the Classification Accuracy of Uterine EMG Signals, IEEE International Conference on Electronics, Circuits and Systems (ICECS), Lebanon, Dec 11-14 2011.</td>
+    </tr>
+    <tr>
+      <td>CA58</td>
+      <td>Ramzi Halabi, Mohamad Diab, Bassam Moslem, Mohamad Khalil, Catherine Marque, “Cross-Correlation Analysis of Multichannel Uterine EMG Signals”, the 34th Engineering in Medicine and Biology Conference IEEE EMBC, pp. 3016-3019, San Diego, USA, Sep. 2012.</td>
+    </tr>
+    <tr>
+      <td>CA59</td>
+      <td>Ramzi Halabi, Mohamad Diab, Bassam Moslem, Mohamad Khalil, Catherine Marque, “Detecting Missing Signals in Multichannel Recordings by Using Higher Order Statistics”, the 34th Engineering in Medicine and Biology Conference IEEE EMBC, pp. 3110-3113, San Diego, USA, Sep. 2012.</td>
+    </tr>
+    <tr>
+      <td>CA60</td>
+      <td>Bassam MOSLEM, Mohamad, O. DIAB, Mohamad KHALIL, Catherine MARQUE, “Classification of Multichannel Uterine EMG Signals Using a Reduced Number of Channels”, 8th International Symposium on Mechatronics and its Applications, April 10-12, 2012 Sharjah, United Arab Emirates.</td>
+    </tr>
+    <tr>
+      <td>CA61</td>
+      <td>Bassam MOSLEM, Mohamad KHALIL, Mohamad, O. DIAB, Catherine MARQUE, “Classification of Multichannel Uterine EMG Signals by Using A Weighted Majority Voting Decision Fusion Rule”, The 16th IEEE Mediterranean Electrotechnical Conference, (Melecon 2012), pp. 335-338, Tunisia, March 2012. (Selected best poster)</td>
+    </tr>
+    <tr>
+      <td>CA62</td>
+      <td>Mohamad, O. DIAB, Bassam MOSLEM, Mohamad KHALIL, Catherine MARQUE, “Classification of Uterine EMG Signals by Using Normalized Wavelet Packet Energy”, The 16th IEEE Mediterranean Electrotechnical Conference, (Melecon 2012), pp. 331-334, Tunisia, March 2012.</td>
+    </tr>
+    <tr>
+      <td>CA63</td>
+      <td>Barakat M., Khalil M., Lefebvre D., & Druaux F., Advanced Growing Neural Network Approach for the Fault Diagnosis of Large Scale Industrial Plants, 16th IEEE Mediterranean Electrotechnical Conference, IEEE-MELECON, Tunisia, 2012.</td>
+    </tr>
+    <tr>
+      <td>CA64</td>
+      <td>Dawood M., Cappelle C. , El Badaoui El Najjar M., Khalil M., andPomorski D., An Intelligent vehicle Geo-Localization based on GPS, vision and 3D virtual model, cyber2012  (2012)</td>
+    </tr>
+    <tr>
+      <td>CA65</td>
+      <td>HAJAR Mayssa , Mohamad KHALIL, Bearing Fault Detection Using Neural Networks Mohamad 2012 2nd International Conference on Advances in Computational Tools for Engineering Applications (ACTEA), NDU Lebanon, 2012</td>
+    </tr>
+    <tr>
+      <td>CA66</td>
+      <td>Firas Zakaria ,Mohamad Khalil.  "Heart Rate Variability (HRV) Analysis Using DSP For The Detection Of  Myocardial Infarction"2012 2nd International Conference on Advances in Computational Tools for Engineering Applications (ACTEA), NDU Lebanon, 2012</td>
+    </tr>
+    <tr>
+      <td>CA67</td>
+      <td>Khodor Nadine, Matelot David, Amoud Hassan, Hernandez Alfredo, Khalil Mohamad, Carrault Guy, et Carré François  Differentiating between patients with vasovagal syncope using the analysis of heart rate variability during head-up tilt test.. Proc first International Conference on Communications, Signal Processing, and their Applications (ICCSPA), Sharjah, UAE, 12-14 February, 2013.</td>
+    </tr>
+    <tr>
+      <td>CA68</td>
+      <td>ALAMEDINE D., KHALIL M., MARQUE C. "Parameters Extraction and Monitoring in Uterine EMG Signals. Detection of Preterm Deliveries". Recherche en Imagerie et Technologies pour la Santé (RITS), Bordeaux, France, 8-11 avril 2013</td>
+    </tr>
+    <tr>
+      <td>CA69</td>
+      <td>Y. Kabbara, A. Shahin, A. Nait-Ali, and M. Khalil, “An automatic algorithm for human identification using hand X-ray images,” in 2013 2nd International Conference on Advances in Biomedical Engineering (ICABME), 2013, pp. 167–170.</td>
+    </tr>
+    <tr>
+      <td>CA70</td>
+      <td>K. El-Soufi, Y. Kabbara, A. Shahin, M. Khalil, and A. Nait-Al, “An Automatic Segmentation To Extract Bone Tissue in Hand X-Ray Images,” in 2013 2nd International Conference on Advances in Biomedical Engineering (ICABME), 2013, pp. 171–174.</td>
+    </tr>
+    <tr>
+      <td>CA71</td>
+      <td>D. Alamedine, C. Marque, and M. Khalil, “Binary particle swarm optimization for feature Selection on uterine electrohysterogram signal,” in Advances in Biomedical Engineering (ICABME), 2013 2nd International Conference IEEE 2013, Tripoli, Lebanon, pp. 125–128, 11-13 September 2013.</td>
+    </tr>
+    <tr>
+      <td>CA72</td>
+      <td>D.Alamedine, M. Khalil, and C. Marque, “Feature Selection Techniques in Uterine Electrohysterography Signal,” in XIII Mediterranean Conference on Medical and Biological Engineering and Computing 2013, Medicon 2013, Sevilla, Spain, pp. 779–782, 25-28 September 2013.</td>
+    </tr>
+    <tr>
+      <td>CA73</td>
+      <td>Khouloud Samrouth, Olivier Deforges, Yi Liu, François Pasteau, Mohamad Khalil, Wassim Falou "Efficient depth map compression exploiting correlation with texture data in multiresolution predictive image coders", Multimedia and Expo Workshops (ICMEW), 2013.</td>
+    </tr>
+    <tr>
+      <td>CA74</td>
+      <td>A. Mheich, M. Hassan, M Khalil et al. (2014). Spatiotemporal analysis of brain functional connectivity. 6th European Conference of the International Federation for Medical and Biological Engineering (MBEC 2014), Croatia.</td>
+    </tr>
+    <tr>
+      <td>CA75</td>
+      <td>N Khodor, G Carrault, P L'hostis, H Amoud, M Khalil, A Hernandez, New T-wave parameters describing repolarization abnormalities induced by drug, 2014 Middle East Conference on Biomedical Engineering (MECBME), 236-239, 2014.</td>
+    </tr>
+    <tr>
+      <td>CA76</td>
+      <td>M Khalil, A Adib, Audio watermarking system based on Frequency Hopping modulation, 2014 International Conference on Multimedia Computing and Systems (ICMCS), 211-216, 2014.</td>
+    </tr>
+    <tr>
+      <td>CA77</td>
+      <td>A Shahin, W Moudani, F Chakik, M Khalil, Data mining in healthcare information systems: Case studies in Northern Lebanon, 2014 Third International Conference on e-Technologies and Networks for Development (ICeND), 151-155, 2014.</td>
+    </tr>
+    <tr>
+      <td>CA78</td>
+      <td>M Khalil, A Adib, Embedding and extracting multiple watermaks in audio signals using CDMA, 2014 9th International Conference on Intelligent Systems: Theories and Applications (SITA-14), 1-7, 2014.</td>
+    </tr>
+    <tr>
+      <td>CA79</td>
+      <td>D Battikh, S El Assad, B Bakhache, O Déforges, M Khalil, Steganalysis of a chaos-based steganographic method, 10th International Conference on Communications (COMM), 1-4, 2014.</td>
+    </tr>
+    <tr>
+      <td>CA80</td>
+      <td>N Khodor, G Carrault, D Matelot, H Amoud, N Ville, M Khalil, F Carre, Alfredo Hernández, A new phase space analysis algorithm for the early detection of syncope during head-up tilt tests, Computing in Cardiology Conference (CinC), 141-144, 2014.</td>
+    </tr>
+    <tr>
+      <td>CA81</td>
+      <td>FA Zakaria, CV Toulouse, M El Badaoui, C Serviere, M Khalil, Contribution of the cyclic correlation in gait analysis: Variation between fallers and non-fallers, IEEE 16th International Conference on e-Health Networking, Applications and Services (Healthcom), 176-181, 2014.</td>
+    </tr>
+    <tr>
+      <td>CA82</td>
+      <td>K Samrouth, O Deforges, Y Liu, W Falou, M Khalil, A joint 3D image semantic segmentation and scalable coding scheme with ROI approach, 2014 IEEE Visual Communications and Image Processing Conference, 270-273, 2014.</td>
+    </tr>
+    <tr>
+      <td>CA83</td>
+      <td>N Abdoun, S El Assad, MA Taha, R Assaf, O Deforges, M Khalil, Hash Function based on Efficient Chaotic Neural Network, International Conference on Internet Technology and Secured Transactions, 32-37, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA84</td>
+      <td>M Merhy, A Benzinou, K Nasreddine, M Khalil, G Faour, Recognition of shape parts using shape geodesies, International conference on Image Processing Theory, Tools and Applications (IPTA), 187-192, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA85</td>
+      <td>Y Kabbara, A Nait-Ali, A Shahin, M Khalil, Hidden biometrie identification/authentication based on phalanx selection from hand X-ray images with safety considerations, International conference on Image Processing Theory, Tools and Applications (IPTA), 423-428, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA86</td>
+      <td>M Shamas, I Merlet, A Nica, M Hassan, M Khalil, A Biraben, W El Faou, Fabrice wendling, Reconstruction of depth-EEG signals: A spatiotemporal model to simulate realistic epileptic activities, International Conference on Advances in Biomedical Engineering (ICABME), 131-133, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA87</td>
+      <td>K Safi, A Diab, IM Albertsen, E Hutin, S Mohammed, M Khalil, Y Amirat, Non-linear analysis of human stability during static posture, International Conference on Advances in Biomedical Engineering (ICABME), 285-288, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA88</td>
+      <td>L Mouawad, M Rousseau, D Brasse, Z El Bitar, A Osman, M Khalil, Ziad Francis, Beam shaping systems for small animal proton therapy, International Conference on Advances in Biomedical Engineering (ICABME), 174-177, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA89</td>
+      <td>N Nader, C Marque, M Hassan, W Falou, A Diab, M Khalil, Pregnancy monitoring using graph theory based analysis, International Conference on Advances in Biomedical Engineering (ICABME), 73-76, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA90</td>
+      <td>A Kabbara, M Hassan, M Khalil, H Eid, W El-Falou, An efficient P300-speller for Arabic letters, International Conference on Advances in Biomedical Engineering (ICABME), 142-145, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA91</td>
+      <td>K Safi, F Attal, S Mohammed, M Khalil, Y Amirat, Physical activity recognition using inertial wearable sensors—A review of supervised classification algorithms, International Conference on Advances in Biomedical Engineering (ICABME), 313-316, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA92</td>
+      <td>N Munla, M Khalil, A Shahin, A Mourad, Driver stress level detection using HRV analysis, International Conference on Advances in Biomedical Engineering (ICABME), 61-64, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA93</td>
+      <td>FA Zakaria, M El-Badaoui, M Khalil, The random slope modulation: A new cyclostationarity model applied to biomechanical signals, International Conference on Advances in Biomedical Engineering (ICABME), 297-300, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA94</td>
+      <td>M Daher, M El Badaoui El Najjar, A Diab, M Khalil, F Charpillet, Towards a usable and an efficient elder fall detection system, International Conference on Advances in Biomedical Engineering (ICABME), 93-96, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA95</td>
+      <td>D Alamedine, C Marque, M Khalil, Channel selection for monovariate analysis on EHG, International Conference on Advances in Biomedical Engineering (ICABME), 85-88, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA96</td>
+      <td>M Merhy, A Benzinou, K Nasreddine, M Khalil, G Faour, Parts-based shape recognition via shape geodesics, 23rd European Signal Processing Conference (EUSIPCO), 150-154, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA97</td>
+      <td>S Al-Omar, A Diab, N Nader, M Khalil, B Karlsson, C Marque, Detecting labor using graph theory on connectivity matrices of uterine EMG, 37th Annual international conference on Engineering in Medicine and Biology Society (EMBC), 2195-2198, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA98</td>
+      <td>N Nader, M Hassan, W Falou, A Diab, S Al-Omar, M Khalil, C Marque, Classification of pregnancy and labor contractions using a graph theory based analysis, 37th Annual international conference on Engineering in Medicine and Biology Society (EMBC), 2876-2879, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA99</td>
+      <td>A Mheich, M Hassan, V Gripon, M Khalil, C Berrou, O Dufor, F Wendling, A novel algorithm for measuring graph similarity: application to brain networks, 7th International IEEE/EMBS Conference on Neural Engineering (NER), 1068-1071, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA100</td>
+      <td>D Alamadine, M Khalil, C Marque, Comparison of Feature selection for Monopolar and Bipolar EHG signal, Journées RITS 2015, pp 100-101, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA101</td>
+      <td>N Nader, M Hassan, M Khalil, C Marque, W Falou, From EHG signals to graphs: A new method for predicting premature birth, Journées RITS 2015, pp 182-183, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA102</td>
+      <td>A Mheich, M Hassan, O Dufor, M Khalil, C Berrou, F Wendling, Spatiotemporal analysis of brain functional connectivity, 6th European Conference of the International Federation for Medical and biological engineering, springer, 934-937, 2015.</td>
+    </tr>
+    <tr>
+      <td>CA103</td>
+      <td>Challita N, Khalil M, Beauseroy P. New technique for feature selection: Combination between elastic net and relief. In 2015 Third International Conference on Technological Advances in Electrical, Electronics and Computer Engineering (TAEECE), 2015 Apr 29 (pp. 262-267). IEEE.</td>
+    </tr>
+    <tr>
+      <td>CA104</td>
+      <td>Khoder J, Younes R, Obeid H, Khalil M. Dimension Reduction of Hyperspectral Image with Rare Event Preserving. In Iberian Conference on Pattern Recognition and Image Analysis 2015 Jun 17 (pp. 621-629). Springer International Publishing.</td>
+    </tr>
+    <tr>
+      <td>CA105</td>
+      <td>Zakaria FA, El-Badaoui M, Khalil M. The random slope modulation: A new cyclostationarity model applied to biomechanical signals. In 2015 International Conference on Advances in Biomedical Engineering (ICABME) 2015 Sep 16 (pp. 297-300). IEEE.</td>
+    </tr>
+    <tr>
+      <td>CA106</td>
+      <td>Abdoun N, El Assad S, Taha MA, Assaf R, Déforges O, Khalil M. Secure hash algorithm based on efficient chaotic neural network. In The 11th International Conference on Communications 2016 Jun 9 (p. comm2016).</td>
+    </tr>
+    <tr>
+      <td>CA107</td>
+      <td>Nader N, Hassan M, Falou W, Marque C, Khalil M. A node-wise analysis of the uterine muscle networks for pregnancy monitoring. In 2016 IEEE 38th Annual International Conference of the Engineering in Medicine and Biology Society (EMBC), 2016 Oct 18 (pp. 712-715). IEEE.</td>
+    </tr>
+    <tr>
+      <td>CA109</td>
+      <td>Safi K, Hutin E, Mohammed S, Albertsen IM, Delechelle E, Amirat Y, Khalil M, Gracies JM. Human static postures analysis using empirical mode decomposition., In 2016 IEEE 38th Annual International Conference of the Engineering in Medicine and Biology Society (EMBC) 2016 Oct 18 (pp. 3765-3768). IEEE.</td>
+    </tr>
+    <tr>
+      <td>CA110</td>
+      <td>Shamas M, Benquet P, Merlet I, El Falou W, Khalil M, Wendling F. Computational modeling of high frequency oscillations recorded with clinical intracranial macroelectrodes., In 2016 IEEE 38th Annual International Conference of the Engineering in Medicine and Biology Society (EMBC) 2016 Oct 18 (pp. 1014-1017). IEEE.</td>
+    </tr>
+    <tr>
+      <td>CA111</td>
+      <td>Nicole Challita, Mohamad Khalil, Pierre Beauseroy, New feature selection method based on neural network and machine learning, IEEE International Multidisciplinary Conference on Engineering Technology (IMCET), Beirut, Lebanon, pp.81-85, 2/11/2016.</td>
+    </tr>
+    <tr>
+      <td>CA112</td>
+      <td>Alaa Daher, Yahya Chetouani, Ghaleb Hoblos, Mohamad Khalil, Modified fuzzy c-means combined with neural network based fault diagnosis approach for a distillation column, IEEE International Multidisciplinary Conference on Engineering Technology (IMCET), Beirut, Lebanon, pp.185-190, 2/11/2016.</td>
+    </tr>
+    <tr>
+      <td>CA113</td>
+      <td>D Alamedine, M Khalil, C Marque, Channel combination selection for EHG bivariate analysis, 2016 3rd Middle East Conference on Biomedical Engineering (MECBME), Beirut, Lebanon, pp.59-62, 6/10/2016.</td>
+    </tr>
+    <tr>
+      <td>CA114</td>
+      <td>Khaled Safi, Samer Mohammed, Ferhat Attal, Mohamad Khalil, Yacine Amirat, Recognition of different daily living activities using hidden Markov model regression, 2016 3rd Middle East Conference on Biomedical Engineering (MECBME), Beirut, Lebanon, pp.16-19, 6/10/2016.</td>
+    </tr>
+    <tr>
+      <td>CA115</td>
+      <td>J Rizkallah, P Benquet, F Wendling, M Khalil, A Mheich, O Dufor, M Hassan, Brain network modules of meaningful and meaningless objects, 2016 3rd Middle East Conference on Biomedical Engineering (MECBME), Beirut, Lebanon, pp.34-37, 6/10/2016.</td>
+    </tr>
+    <tr>
+      <td>CA116</td>
+      <td>F Wehbi, W Huo, Y Amirat, M El Rafei, M Khalil, S Mohammed, Active Impedance Control of a Knee-Joint Orthosis During Swing Phase, Proc. Of the IEEE International Conference on Rehabilitation Robotics (ICORR 2017), 2017.</td>
+    </tr>
+    <tr>
+      <td>CA117</td>
+      <td>M El Ghosh, H Naja, H Abdulrab, M Khalil , Ontology learning process as a bottom-up strategy for building domain-specific ontology from legal texts, 9th International Conference on Agents and Artificial Intelligence, 24/2/2017.</td>
+    </tr>
+    <tr>
+      <td>CA118</td>
+      <td>M Daher, MEB El Najjar, A Diab, M Khalil, A Dib, F Charpillet, Ambient assistive living system using RGB-D camera, in proceedings of Fourth International conferences on Advances in Biomedical Engineering (ICABME), Beirut, Lebanon, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA119</td>
+      <td>M Shamas, I Merlet, A Nica, P Benquet, M Khalil, W El Faou, F Wendling, Estimating the dominant frequency of High Frequency Oscillations in depth-EEG signals, in proceedings of Fourth International conferences on Advances in Biomedical Engineering (ICABME), Beirut, Lebanon, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA120</td>
+      <td>K Safi, S Mohammed, Y Amirat, M Khalil, Postural stability analysis—A review of techniques and methods for human stability assessment, in proceedings of Fourth International conferences on Advances in Biomedical Engineering (ICABME), Beirut, Lebanon, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA121</td>
+      <td>A Zaylaa, A Diab, M Khalil, C Marque, Multichannel EHG segmentation for automatically identifying contractions and motion artifacts, in proceedings of Fourth International conferences on Advances in Biomedical Engineering (ICABME), Beirut, Lebanon, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA122</td>
+      <td>S Allouch, R Younes, J Laforet, S Boudaoud, M Khalil, Sensitivity analysis of a human finger model, in proceedings of Fourth International conferences on Advances in Biomedical Engineering (ICABME), Beirut, Lebanon, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA123</td>
+      <td>A Diab, A Raad, M Chakouch, M Osman, M Hamze, M Khalil, W Kamali, Automatic reading and interpretation of an Antibiogram, in proceedings of Fourth International conferences on Advances in Biomedical Engineering (ICABME), Beirut, Lebanon, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA124</td>
+      <td>R Mallat, V Bonnet, S Mohammed, M Khalil, Dynamic identification of a human-exoskeleton system, in proceedings of Fourth International conferences on Advances in Biomedical Engineering (ICABME), Beirut, Lebanon, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA125</td>
+      <td>S Zahran, B Alrifai, A Diab, M Khalil, C Marque, Separation and localization of EHG sources using tensor models, in proceedings of Fourth International conferences on Advances in Biomedical Engineering (ICABME), Beirut, Lebanon, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA126</td>
+      <td>M El Ghosh, H Naja, H Abdulrab, M Khalil, Using the Unified Foundational Ontology (UFO) for Grounding Legal Domain Ontologies, in 9th International Conference on Knowledge Engineering and Ontology Development, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA127</td>
+      <td>M El Ghosh, H Abdulrab, H Naja, M Khalil, A Criminal Domain Ontology for Modelling Legal Norms, Conference of the Italian Association for Artificial Intelligence, 282-294, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA128</td>
+      <td>N Abdoun, S El Assad, K Hammoud, R Assaf, M Khalil, O Deforges, New keyed chaotic neural network hash function based on sponge construction, 12th International Conference for Internet Technology and Secured Transactions (ICITST), 35-38, 2017.</td>
+    </tr>
+    <tr>
+      <td>CA129</td>
+      <td>L Mouawad, Z El Bitar, A Osman, M Khalil, PA Hervieux, C Dal Cappello, Triply Differential Ionization Cross Sections of atomic and molecular targets by single electron impact, EPJ Web of Conferences 170, 01012, 2018.</td>
+    </tr>
+    <tr>
+      <td>CA130</td>
+      <td>Mallat, Randa, Vincent Bonnet, Mohamad Khalil, and Samer Mohammed. "Toward an Affordable Multi-Modal Motion Capture System Framework for Human Kinematics and Kinetics Assessment." In International Symposium on Wearable Robotics, pp. 65-69. Springer, Cham, 2018.</td>
+    </tr>
+    <tr>
+      <td>CA131</td>
+      <td>Bakir, Nader, Wassim Hamidouche, Olivier Déforges, Khouloud Samrouth, and Mohamad Khalil. "Light Field Image Compression Based on Convolutional Neural Networks and Linear Approximation." In 2018 25th IEEE International Conference on Image Processing (ICIP), pp. 1128-1132. IEEE, 2018.</td>
+    </tr>
+    <tr>
+      <td>CA132</td>
+      <td>Nicole Challita, Mohamad Khalil, Pierre Beauseroy, Efficiency of New Feature Selection Method Based on Neural Network, 2018 International Conference on Computer and Applications (ICCA), pp. 1-320, August 2018.</td>
+    </tr>
+    <tr>
+      <td>CA133</td>
+      <td>Mohamad Daher, Maan El Badaoui El Najjar, Ahmad Diab, Mohamad Khalil, François Charpillet, Multi-Sensory Assistive Living System for Elderly in-Home Staying, 2018 International Conference on Computer and Applications (ICCA), pp. 168-171, August 2018.</td>
+    </tr>
+    <tr>
+      <td>CA134</td>
+      <td>Mallat, Randa, Vincent Bonnet, Weiguang Huo, Patrick Karasinski, Yacine Amirat, Mohamad Khalil, and Samer Mohammed. "Human-Exoskeleton System Dynamics Identification Using Affordable Sensors." In 2018 IEEE International Conference on Robotics and Automation (ICRA), pp. 6759-6765. IEEE, 2018.</td>
+    </tr>
+    <tr>
+      <td>CA135</td>
+      <td>Saeed Zahran, Ahmad Diab, Mohamad Khalil, Catherine Marque, Source localization of uterine activity using maximum entropy on the mean approach, 2018 IEEE 4th Middle East Conference on Biomedical Engineering (MECBME), pp. 247-251, March 2018.</td>
+    </tr>
+    <tr>
+      <td>CA136</td>
+      <td>M. MOURAD, A. DIAB, M. KHALIL, C. MARQUE, Pregnancy/Labor Discrimination And Monitoring: An Investigation using nonlinear methods, International Arab Conference on Information Technology (ACIT'2018) Beirut, Lebanon, November 28-30, 2018.</td>
+    </tr>
+    <tr>
+      <td>CA137</td>
+      <td>A. ZAYLAA, A. DIAB, M. KHALIL, C. MARQUE, Automatic segmentation of contractions and other events in Monopolar EHGs-Monodimensional Study, International Arab Conference on Information Technology (ACIT'2018), Beirut, Lebanon, November 28-30, 2018.</td>
+    </tr>
+    <tr>
+      <td>CA138</td>
+      <td>Hiba El Tillawi, Ahmad Diab, Mohamad Khalil, and Catherine Marque. "Multichannel EHG Segmentation for automatically identifying contractions, In 9th IEEE Cairo International Biomedical Engineering Conference (CIBEC), pp. 162-166, Cairo, 2018.</td>
+    </tr>
+    <tr>
+      <td>CA139</td>
+      <td>Bakir, Nader; Hamidouche, Wassim; Déforges, Olivier; Samrouth, Khouloud; Fezza, Sid Ahmed; Khalil, Mohamad; RDO-Based Light Field Image Coding Using Convolutional Neural Networks and Linear Approximation 2019 Data Compression Conference (DCC), 2019</td>
+    </tr>
+    <tr>
+      <td>CA140</td>
+      <td>Zaylaa, Amer, Ahmad Diab, Ziad Fawal, Mohamad Khalil, and Catherine Marque, Automatic segmentation of bipolar EHGs’ contractions using wavelet transform, In Mediterranean Conference on Medical and Biological Engineering and Computing (MEDICON), pp. 174-183. Springer, Cham, Portugal, September 2019.</td>
+    </tr>
+    <tr>
+      <td>CA141</td>
+      <td>Soumaya Berro, Ahmad Diab, Mohamad Hajj-Hassan, Mohamad Khalil, Hassan Amoud, Sofiane Boudaoud, Identification of motor unit spatial activation by minimum norm estimation, in fifth ICABME Conf., Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA142</td>
+      <td>Mouhamad Mourad, Ahmad Diab, Mohammad Khalil, Catherine Marque, Pregnancy Labor Characterization and Classification Using Nonlinear Methods, in fifth ICABME Conf., Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA143</td>
+      <td>Amer Zaylaa, Ahmad Diab, Ziad Fawal, Mohamad Khalil, Catherine Marque, Automatic segmentation of bipolar EHGs’ contractions using wavelet decomposition-Mono & Multi-dimensional Study, in fifth ICABME Conf., Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA144</td>
+      <td>El Dine, Kamil Bader, Catherine Marque, Noujoud Nader, Wassim Falou, and Mohamad Khalil, Pregnancy Labor classification using neural network based analysis, In Fifth International Conference on Advances in Biomedical Engineering (ICABME), Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA145</td>
+      <td>Alnazer, Israa, Pascal Bourdon, Thierry Urruty, Carole Guillevin, Mathieu Naudin, Mohamad Khalil, Ahmad Shahin, Omar Falou, and Christine Fernandez-Maloigne, ADC Maps Texture Analysis for the Evaluation of Kidney Function: A Preliminary Study, In Fifth International Conference on Advances in Biomedical Engineering (ICABME), Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA146</td>
+      <td>Mallat, Randa, Mohamad Khalil, Gentiane Venture, Vincent Bonnet, and Samer Mohammed, Human-Exoskeleton Joint Misalignment: A Systematic Review, In Fifth International Conference on Advances in Biomedical Engineering (ICABME), Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA147</td>
+      <td>Allouch, Sahar, Judie Tabbal, Assef Nasser, Mahmoud Hassan, Mohamad Khalil, and Aya Kabbara, Altered motor performance in Alzheimer’s disease: a dynamic analysis using EEG, In Fifth International Conference on Advances in Biomedical Engineering (ICABME), Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA148</td>
+      <td>Tabbal, Judie, Aya Kabbara, Mohamad Khalil, Mahmoud Hassan, and Pascal Benquet, Detecting transient brain states of functional connectivity: A comparative study, In Fifth International Conference on Advances in Biomedical Engineering (ICABME), Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA149</td>
+      <td>Charafeddine, Jinan, Sylvain Chevallier, Mohamad Khalil, Didier Pradon, and Samer Alfayad, Neuromotor Strategy of Gait Rehabilitation for Lower-Limb Spasticity, In International Conference on Advances in Biomedical Engineering (ICABME). Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA150</td>
+      <td>Nehma, A. L., Jinan CHARAFEDDINE, Mohamad KHALIL, and AL-FAYAD Samer, Using Bio-Kinematic signals for Rehabilitation Exoskeleton Control, In Fifth International Conference on Advances in Biomedical Engineering (ICABME), Oct. 2019, Tripoli, Lebanon, p.1-4.</td>
+    </tr>
+    <tr>
+      <td>CA151</td>
+      <td>Berro, Soumaya, Ahmad Diab, Mohamad Hajj-Hassan, Mohamad Khalil, Hassan Amoud, and Sofiane Boudaoud. "Exploration of motor unit activation pattern using high density sEMG minimum norm estimation." In 2020 IEEE 5th Middle East and Africa Conference on Biomedical Engineering (MECBME), pp. 1-6. IEEE, 2020.</td>
+    </tr>
+    <tr>
+      <td>CA152</td>
+      <td>Zaylaa, Amer, Wassim El Falou, Ahmad Diab, Mohamad Khalil, and Catherine Marque. "Wavelet and Over-Segmentation Elimination Techniques Effect on Automatic Uterine EMG Segmentation Performance/Quality." In 2020 IEEE 5th Middle East and Africa Conference on Biomedical Engineering (MECBME), pp. 1-4. IEEE, 2020.</td>
+    </tr>
+    <tr>
+      <td>CA153</td>
+      <td>Alnazer, Israa, Pascal Bourdon, Thierry Urruty, Omar Falou, Mohamad Khalil, Ahmad Shahin, and Christine Fernandez-Maloigne. "Renal Function Evaluation Survey: Artificial Intelligence for the Next Decade?." In 2020 2nd International Conference on Electrical, Control and Instrumentation Engineering (ICECIE), pp. 1-4. IEEE, 2020.</td>
+    </tr>
+    <tr>
+      <td>CA154</td>
+      <td>Mallat, R., V. Bonnet, G. Venture, Raphaël Dumas, M. Khalil, and S. Mohammed. "Dynamics Assessment and Minimal Model of an Orthosis-Assisted Knee Motion." In 2020 8th IEEE RAS/EMBS International Conference for Biomedical Robotics and Biomechatronics (BioRob), pp. 352-357. IEEE, 2020.</td>
+    </tr>
+    <tr>
+      <td>CA155</td>
+      <td>I. Alnazer, Omar Falou, Thierry Urruty, Pascal Bourdon, Carole Guillevin, Mathieu Naudin, Mohamad Khalil, Ahmad Shahin, Christine Fernandez-Maloigne, "Usefulness of Functional MRI Textures in the Evaluation of Renal Function," 2021 Sixth International Conference on Advances in Biomedical Engineering (ICABME), 2021, pp. 34-38, doi: 10.1109/ICABME53305.2021.9604879.</td>
+    </tr>
+    <tr>
+      <td>CA156</td>
+      <td>S. Berro, A. Diab, M. Hajj-Hassan, M. Khalil, H. Amoud and S. Boudaoud, "Retrieving motor unit depth using inverse approach on HD-sEMG signals," 2021 Sixth International Conference on Advances in Biomedical Engineering (ICABME), 2021, pp. 159-162, doi: 10.1109/ICABME53305.2021.9604853.</td>
+    </tr>
+    <tr>
+      <td>CA157</td>
+      <td>F. Naaman, F. Zakaria, A. Zaylaa, M. Khalil and K. Mechref, "Automatic segmentation of uterine contractions in EHG signals: Hardware implementation with Raspberry Pi and Arduino Mega," 2021 Sixth International Conference on Advances in Biomedical Engineering (ICABME), 2021, pp. 15-18, doi: 10.1109/ICABME53305.2021.9604840.</td>
+    </tr>
+    <tr>
+      <td>CA158</td>
+      <td>S. Allouch, Mahmoud Hassan, Maxime Yochum, Joan Duprez, Mohamad Khalil, Fabrice Wendling, Julien Modolo, Aya Kabbara, "COALIA: a ground-truth for the evaluation of the EEG source connectivity," 2021 Sixth International Conference on Advances in Biomedical Engineering (ICABME), 2021, pp. 180-183, doi: 10.1109/ICABME53305.2021.9604833. Robustness Analysis of the CFB-MNE Approach S Berro, A Diab, M Hajj-Hassan, M Khalil, S Boudaoud - 2023 Seventh International Conference on Advances …, 2023</td>
+    </tr>
+   
+  </tbody>
+</table>
+</div>
+	</details>
+	<details id="d-report" open>
+    <summary>Works , Reports</summary>
+	<div class="table-wrapper">
+	
+        <table border="0" >
+		 <colgroup>
+            <col style="width: 10%;" />  <!-- Set width for 'Code' column -->
+            <col style="width: 90%;" />  <!-- Set width for 'Rest' column -->
+         </colgroup>
+ 
+  <tbody>
+    <tr>
+      <td>T1</td>
+      <td> M. KHALIL. Acquisition et traitement de l’EMG utérin par télémétrie chez les macaques, Rapport de DEA - spécialité Génie Biomédical, Université de Technologie de Compiègne, 1996</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>M. KHALIL, H. RIFAI, G. HOBLOS.  Réalisation d'une carte d'interface (entrées/sorties) avec un PC, commande d'une "Main Robotique". Projet fin d’étude à l’université libanaise, Faculté de génie, Département électricité électronique, Tripoli, Liban,1995.</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>M. KHALIL.  Une approche de la détection et de la classification dans les signaux non stationnaires. Application à l’EMG utérin. Thèse de Doctorat à l’université de technologie de Compiègne, 1999.</td>
+    </tr>
+    <tr>
+      <td>T4</td>
+      <td>J. DUCHENE, Y. Langeron, M. KHALIL. Reconnaissance de signature temps fréquence sur des signaux électromyographiques obtenus par stimulation mécanique. Rapport de contrat 98001 Astrée (Université de Technologie de Troyes) et Regienov Bertrand-Faure, 1999</td>
+    </tr>
+    <tr>
+      <td>T5 </td>
+      <td>Mohamad KHALIL and All : Report about the accreditation of the Doctoral sschool at the Lebanese University, June 2016</td>
+    </tr>
+    <tr>
+      <td>T6</td>
+      <td>Mohamad KHALIL, AABDELLATIF SAMHAT,and others :  Report for CTI for the accrediattion of the faculty of engineering, March 2019</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+	</details>
+</div>
+
+<script>
+  const tabSummary = document.getElementById('tab-summary');
+  const tabDetail = document.getElementById('tab-detail');
+  const contentSummary = document.getElementById('content-summary');
+  const contentDetail = document.getElementById('content-detail');
+  const exportBtn = document.getElementById('exportBtn');
+
+  function activateTab(tab) {
+    if(tab === 'summary'){
+      tabSummary.classList.add('active');
+      tabSummary.setAttribute('aria-selected', 'true');
+      tabDetail.classList.remove('active');
+      tabDetail.setAttribute('aria-selected', 'false');
+      contentSummary.classList.add('active');
+      contentDetail.classList.remove('active');
+    } else {
+      tabDetail.classList.add('active');
+      tabDetail.setAttribute('aria-selected', 'true');
+      tabSummary.classList.remove('active');
+      tabSummary.setAttribute('aria-selected', 'false');
+      contentDetail.classList.add('active');
+      contentSummary.classList.remove('active');
+    }
+  }
+
+  tabSummary.onclick = () => activateTab('summary');
+  tabDetail.onclick = () => activateTab('detail');
+
+  [tabSummary, tabDetail].forEach(tab => {
+    tab.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        tab.click();
+      }
+    });
+  });
+
+  exportBtn.onclick = () => {
+    window.print();
+  };
+
+  window.onbeforeprint = () => {
+    document.body.classList.add('printing');
+    document.querySelectorAll('.tab-content.active details').forEach(d => d.open = true);
+  };
+
+  window.onafterprint = () => {
+    document.body.classList.remove('printing');
+  };
+
+  function switchLanguage(lang) {
+    const en = document.getElementById('lang-en');
+    const ar = document.getElementById('lang-ar');
+    const btnEn = document.getElementById('btn-en');
+    const btnAr = document.getElementById('btn-ar');
+
+    if (lang === 'ar') {
+      en.style.display = 'none';
+      ar.style.display = 'block';
+      btnEn.classList.remove('active');
+      btnAr.classList.add('active');
+    } else {
+      en.style.display = 'block';
+      ar.style.display = 'none';
+      btnAr.classList.remove('active');
+      btnEn.classList.add('active');
+    }
+  }
+</script>
+<footer>
+  © 2025 Prof. Mohamad Khalil · Biomedical Engineering Leader · All rights reserved
+</footer>
+</body>
+</html>
